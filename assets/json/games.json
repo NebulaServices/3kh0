@@ -9,7 +9,7 @@
     "name": "checkers",
     "root": "checkers",
     "file": "checkers.html",
-    "img": ".png"
+    "img": "image.png"
   },
   {
     "name": "1",
