@@ -6,6 +6,12 @@
     "img": "TemplateData/fullscreen.png"
   },
   {
+    "name": "checkers",
+    "root": "checkers",
+    "file": "checkers.html",
+    "img": ".png"
+  },
+  {
     "name": "1",
     "root": "1",
     "file": "index.html",
