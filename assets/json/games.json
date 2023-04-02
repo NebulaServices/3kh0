@@ -1,5 +1,11 @@
 [
   {
+    "name": "dr does chemistry quiz",
+    "root": "doe",
+    "file": "index.html",
+    "img": "TemplateData/fullscreen.png"
+  },
+  {
     "name": "1",
     "root": "1",
     "file": "index.html",
