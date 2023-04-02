@@ -1,0 +1,80 @@
+[
+  {
+    "theme": "default",
+    "color": "#4caf50"
+  },
+  {
+    "theme": "light",
+    "color": "#4caf50"
+  },
+  {
+    "theme": "orchid",
+    "color": "#b625cc"
+  },
+  {
+    "theme": "sky",
+    "color": "#0084ff"
+  },
+  {
+    "theme": "winter",
+    "color": "#3da341"
+  },
+  {
+    "theme": "nebelung",
+    "color": "#3d2d1e",
+    "hidden": true
+  },
+  {
+    "theme": "piplup",
+    "color": "#0026ff",
+    "hidden": true
+  },
+  {
+    "theme": "forternish",
+    "color": "#003443",
+    "hidden": true
+  },
+  {
+    "theme": "northernfish",
+    "color": "#0ec9f8"
+  },
+  {
+    "theme": "forgor",
+    "color": "#d7d700",
+    "hidden": true
+  },
+  {
+    "theme": "monotonium",
+    "color": "#fff"
+  },
+  {
+    "theme": "monotonium-dark",
+    "color": "#000"
+  },
+  {
+    "theme": "concrete",
+    "color": "#808080"
+  },
+  {
+    "theme": "sunset",
+    "color": "#e83141"
+  },
+  {
+    "theme": "rusell2259",
+    "color": "#0473fb",
+    "hidden": true
+  },
+  {
+    "theme": "fracital",
+    "color": "#f971e4"
+  },
+  {
+    "theme": "hacker",
+    "color": "#72dc83",
+    "hidden": true
+  },
+  {
+    "theme": "parrot",
+    "color": "#0580c3"
+  }
+]

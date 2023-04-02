@@ -1,0 +1,7 @@
+{
+    "name": "3kh0",
+    "description": "The better unblocked games website.",
+    "repository": "https://github.com/3kh0/3kh0.github.io",
+    "logo": "https://raw.githubusercontent.com/3kh0/3kh0.github.io/main/images/logo.png",
+    "buildpacks": [{"url": "https://github.com/heroku/heroku-buildpack-static"}]
+}

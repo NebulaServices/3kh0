@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="shortcut icon" href="../images/logo.png" type="image/png" />
+    <title>Loading... | 3kh0</title>
+    <style>
+      html,
+      body {
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        text-align: center;
+        user-select: none;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+
+      .spinner {
+        margin: 0px;
+      }
+
+      .playgame {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        height: 500px;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .loader {
+        margin: 20px;
+      }
+
+      .loader.center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 99999999999;
+        top: 0;
+        left: 0;
+        background: var(--background);
+      }
+
+      .game_img {
+        border-radius: 10%;
+        width: 200px;
+        height: 200px;
+      }
+
+      .spinner {
+        height: 150px;
+        width: 150px;
+        margin: 50px;
+      }
+    </style>
+  </head>
+
+  <body theme="default">
+    <center class="playgame">
+      <div class="loader">
+        <span class="spinner">
+          <svg viewBox="22 22 44 44">
+            <circle class="spinnerSvg" cx="44" cy="44" r="20.2" fill="none" stroke-width="3.6"></circle>
+          </svg>
+        </span>
+      </div>
+      <h1 id="game">Loading...</h1>
+      <button class="play hidden" id="startgame" data-aos="fade-up">Play</button>
+    </center>
+
+    <script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const gameSubpath = urlParams.get("game");
+      const path = location.pathname;
+      const origin = localStorage.getItem("instance");
+      const cdn = localStorage.getItem("cdn");
+
+      if (!origin || !cdn) {
+        window.location.href = `../?onload=window.location.href='${path}${queryString}'`;
+      }
+
+      const instance = origin.replace(location.origin, "");
+
+      if (gameSubpath && origin) {
+        fetch("./json/games.json")
+          .then((res) => res.json())
+          .then((games) => {
+            const gameRoots = [];
+
+            for (let i = 0; i < games.length; i++) {
+              gameRoots.push(games[i].root);
+            }
+
+            const game = games[gameRoots.indexOf(gameSubpath)];
+            document.title = `Play ${game.name} | 3kh0`;
+            window.history.pushState({}, "", `${origin}games/${gameSubpath}`);
+            document.querySelector("#game").textContent = game.name;
+            document.querySelector(".loader").innerHTML = `<img src="${cdn + "/" + game.root + "/" + game.img}" class="game_img" onerror="this.src='./globe.svg'"/>`;
+            document.querySelector("#startgame").classList.remove("hidden");
+
+            document.querySelector("#startgame").addEventListener("click", (e) => {
+              document.body.innerHTML = `
+                <iframe frameborder="0" src="${
+                  cdn + "/" + game.root + "/" + game.file
+                }" onerror="document.write('Could not load game');console.error('The game encountered an error.');" onload="document.querySelector('.overlay').remove();"></iframe>
+                <div class="overlay">
+                  <div class="loader center">
+                    <span class="spinner">
+                      <svg viewBox="22 22 44 44">
+                        <circle class="spinnerSvg" cx="44" cy="44" r="20.2" fill="none" stroke-width="3.6"></circle>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+                `;
+            });
+          })
+          .catch((e) => {
+            document.documentElement.innerText = "Could not load game";
+            console.error(e);
+          });
+      } else {
+        document.documentElement.innerText = "Could not load game";
+
+        if (!origin) {
+          console.error("The origin of the instance could not be found");
+        }
+
+        if (!gameSubpath) {
+          console.error("The game was not provided");
+        }
+      }
+
+      if (window.top === window.self) {
+        if (document.referrer) {
+          window.location.href = document.referrer;
+        } else {
+          window.location.href = "../";
+        }
+      }
+
+      function getContrastHex(hexcolor) {
+        hexcolor = hexcolor.replace("#", "");
+        var r = parseInt(hexcolor.substr(0, 2), 16);
+        var g = parseInt(hexcolor.substr(2, 2), 16);
+        var b = parseInt(hexcolor.substr(4, 2), 16);
+        var yiq = (r * 299 + g * 587 + b * 114) / 1000;
+        return yiq >= 128 ? "#1c1c1c" : "white";
+      }
+
+      function getColorHex(hexcolor) {
+        hexcolor = hexcolor.replace("#", "");
+        var r = parseInt(hexcolor.substr(0, 2), 16);
+        var g = parseInt(hexcolor.substr(2, 2), 16);
+        var b = parseInt(hexcolor.substr(4, 2), 16);
+        var yiq = (r * 299 + g * 587 + b * 114) / 1000;
+        return yiq >= 128 ? "white" : "black";
+      }
+
+      const theme = localStorage.getItem("theme");
+
+      if (!theme) {
+        document.body.setAttribute("theme", "default");
+      }
+
+      if (theme != "custom" && theme) {
+        document.body.setAttribute("theme", theme);
+      } else if (theme == "custom") {
+        const theme = localStorage.getItem("theme_color");
+
+        document.body.setAttribute("theme", "custom");
+        document.body.style = `--theme: ${theme}; --background: ${getContrastHex(theme)}; --text: ${getColorHex(theme)}; --text-secondary: ${getColorHex(theme)};`;
+
+        if (location.pathname.includes("/settings")) {
+          document.querySelector("#theme_color").value = theme;
+        }
+      }
+    </script>
+  </body>
+</html>

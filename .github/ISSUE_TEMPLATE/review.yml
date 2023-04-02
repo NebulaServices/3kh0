@@ -1,0 +1,30 @@
+name: Add a review
+description: Submit a review to be added to the site!
+title: Add a review
+labels:
+  - ✏️ Review
+assignees:
+  - 3kh0
+body:
+  - type: input
+    attributes:
+      label: Name
+      description: What name would you like to use for your review
+      placeholder: 3kh0
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Review
+      description: >-
+        Type up your review here! You can make it funny if you want. Funny =
+        Happy Echo
+      placeholder: 10/10 I love echo he is the best person ever yes he is so cool uwu
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Profile picture
+      placeholder: Drag and drop a photo here! You can use a gif if you want!
+    validations:
+      required: true

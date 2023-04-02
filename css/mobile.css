@@ -1,0 +1,46 @@
+/*-------------------- Mobile --------------------*/
+
+@media only screen and (max-width: 480px) {
+  .navlogo {
+    display: none;
+  }
+
+  .games {
+    grid-template-columns: repeat(auto-fill, 150px);
+    grid-gap: 1rem;
+    margin: 1rem;
+  }
+
+  .game {
+    height: 185px;
+    width: 150px;
+  }
+
+  .game-image {
+    height: 150px;
+    width: 150px;
+  }
+
+  .game-text {
+    line-height: 35px;
+    width: 150px;
+  }
+
+  .review:last-child {
+    display: none;
+  }
+
+  .review:first-child {
+    display: none;
+  }
+
+  .review-placeholder {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 432px) {
+  .reviews-link {
+    display: none;
+  }
+}

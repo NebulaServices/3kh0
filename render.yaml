@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: 3kh0
+    env: static
+    staticPublishPath: .

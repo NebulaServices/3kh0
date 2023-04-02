@@ -1,0 +1,14 @@
+{
+  "name": "3kh0",
+  "description": "3kh0, the better unblocked games website.",
+  "icons": [{
+    "src": "/images/logo.png",
+      "sizes": "460x460",
+      "type": "image/png"
+    }],
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "black",
+  "theme_color": "black"
+}

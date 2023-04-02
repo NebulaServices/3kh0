@@ -1,0 +1,22 @@
+/*
+Hello epic hacker (maybe skid) you are looking at one of the many scripts that powers the site, this script has extra comments and info to help you understand what is going on.
+
+This CSS code is importing external stylesheets into a web page. Here is what each line does:
+
+The first line imports the "Roboto" font family from Google Fonts, and specifies that it should be used for display.
+The second line imports the "JetBrains Mono" font family from Google Fonts, and specifies that it should be used for code blocks.
+The third line imports a stylesheet called "style.css" which likely contains the main styles for the web page.
+The fourth line imports a stylesheet called "themes.css" which likely contains additional styles for different color schemes or themes.
+The fifth line imports a stylesheet called "mobile.css" which likely contains styles that are only used on mobile devices.
+By using the "@import" rule, the styles from these external stylesheets will be merged with the styles from the main CSS file for the web page.
+
+*/
+
+/* Import fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+/* Import main styles */
+@import url('style.css');
+@import url('themes.css');
+@import url('mobile.css');

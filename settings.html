@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The better unblocked games website." />
+    <meta name="keywords" content="front-end web developer, unblocked, games, google sites, unblocked games mom, ublocked, code, coding, programmer, development, javascript, jquery, bootstrap, sass, less, git" />
+    <meta name="author" content="3kh0" />
+    <meta content="3kh0" property="og:title" />
+    <meta content="The better unblocked games website." property="og:description" />
+    <meta content="/images/logo.png" property="og:image" />
+
+    <title>Settings | 3kh0</title>
+    <link href="./images/logo.png" rel="icon" />
+    <link href="./css/index.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer></script>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navitems">
+        <img title="home" onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'" src="./images/logo.png" class="navlogo" draggable="false" />
+        <a href="./">
+          <div class="navitem">Home</div>
+        </a>
+        <a href="./projects">
+          <div class="navitem">Games</div>
+        </a>
+        <a href="./extras">
+          <div class="navitem">Extras</div>
+        </a>
+        <a href="./blog">
+          <div class="navitem">Blog</div>
+        </a>
+        <a href="./settings">
+          <div class="navitem" current>Settings</div>
+        </a>
+        <a href="./about">
+          <div class="navitem">About</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="section-title">Tab Cloak</div>
+    <div class="buttons">
+      <input id="title" class="input" placeholder="Title" onkeyup="setTitle(this.value)" />
+      <input id="icon" class="input" placeholder="Favicon" onkeyup="setFavicon(this.value.trim())" />
+    </div>
+    <br />
+    <p class="section-text">Or choose a readymade cloak:</p>
+    <div class="buttons">
+      <select name="Readymade Cloaks" id="premadecloaks" title="Cloaks">
+        <option value="search">Google Search</option>
+        <option value="cornhub">Cornhub</option>
+        <option value="librex">LibreX</option>
+        <option value="nitter">Nitter</option>
+        <option value="indivious">Indivious</option>
+        <option value="teddit">Teddit</option>
+        <option value="drive">Google Drive</option>
+        <option value="youtube">YouTube</option>
+        <option value="gmail">Gmail</option>
+        <option value="calendar">Google Calendar</option>
+        <option value="meets">Google Meet</option>
+        <option value="classroom">Google Classroom</option>
+        <option value="canvas">Canvas</option>
+        <option value="zoom">Zoom</option>
+        <option value="khan">Khan Academy</option>
+      </select>
+
+      <button class="button" onclick="setCloak()">Set readymade cloak</button>
+      <button class="button" onclick="resetTab()">Reset</button>
+    </div>
+
+    <div class="section-title">Theme</div>
+    <div class="buttons">
+      <button class="button" onclick="setTheme('default')">Default</button>
+      <button class="button" onclick="setTheme('light')">Light</button>
+      <button class="button" onclick="setTheme('poop')">POOP THEME</button>
+      <button class="button" onclick="setTheme('pink')">Pink</button>
+      <button class="button" onclick="setTheme('orchid')">Orchid</button>
+      <button class="button" onclick="setTheme('sky')">Sky</button>
+      <button class="button" onclick="setTheme('sunset')">Sunset</button>
+      <button class="button" onclick="setTheme('fracital')">Fracital</button>
+      <button class="button" onclick="setTheme('concrete')">Concrete</button>
+      <button class="button" onclick="setTheme('monotonium')">Monotonium</button>
+      <button class="button" onclick="setTheme('monotonium-dark')">Monotonium Dark</button>
+      <button class="button" onclick="setTheme('parrot');setParrotColors()">Parrot</button>
+      <button class="button" onclick="setTheme('northernfish')">Northernfish</button>
+      <button hidden class="button forternish" onclick="setTheme('forternish')">Forternish</button>
+      <button class="button" onclick="setTheme('winter')">Winter</button>
+      <button hidden class="button nebelung" onclick="setTheme('nebelung')">Nebelung</button>
+      <button hidden class="button hacker" onclick="setTheme('hacker')">Nebelung is a hacker</button>
+      <button hidden class="button piplup" onclick="setTheme('piplup')">Piplup</button>
+    </div>
+    <br />
+    <div class="buttons">
+      <input type="color" id="theme_color" name="Theme picker" value="#4caf50" oninput="setThemeColor(this.value)" />
+      <label for="head">Set custom color</label>
+    </div>
+
+    <footer>© 3kh0 2023</footer>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/settings.js"></script>
+  </body>
+</html>
