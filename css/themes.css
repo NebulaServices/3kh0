@@ -31,6 +31,12 @@ body[theme="airtagschicken"] {
   --text: #FA11F2;
   --text-secondary: #FA11F2;
 }
+body[theme="communism"] {
+  --background: ##ff0000;
+  --theme: #ff1f1f;
+  --text: #ffff00;
+  --text-secondary: #ffff00;
+}
 
 body[theme="orchid"] {
   --background: #1c1c1c;
