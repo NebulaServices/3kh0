@@ -25,6 +25,12 @@ body[theme="pink"] {
   --text: #39ff14;
   --text-secondary: #39ff14;
 }
+body[theme="airtagschicken"] {
+  --background: #00ff00;
+  --theme: #00ff80;
+  --text: #FA11F2;
+  --text-secondary: #FA11F2;
+}
 
 body[theme="orchid"] {
   --background: #1c1c1c;
