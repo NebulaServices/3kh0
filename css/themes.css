@@ -25,6 +25,12 @@ body[theme="pink"] {
   --text: #39ff14;
   --text-secondary: #39ff14;
 }
+body[theme="yellow"] {
+  --background: #ffff00;
+  --theme: #ffff00;
+  --text: #B58B00;
+  --text-secondary: #B58B00;
+}
 body[theme="airtagschicken"] {
   --background: #00ff00;
   --theme: #00ff80;
@@ -43,7 +49,6 @@ body[theme="homestuck"] {
     --text: black;
     --text-secondary: white;
 }
-
 body[theme="orchid"] {
   --background: #1c1c1c;
   --theme: #b625cc;
