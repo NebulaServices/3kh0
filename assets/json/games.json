@@ -12,6 +12,12 @@
     "img": "image.png"
   },
   {
+    "name": "bus and subway",
+    "root": "bus and subway",
+    "file": "index.html",
+    "img": "img.jpg"
+  },
+  {
     "name": "1",
     "root": "1",
     "file": "index.html",
