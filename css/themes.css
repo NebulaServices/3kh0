@@ -37,6 +37,12 @@ body[theme="communism"] {
   --text: #ffff00;
   --text-secondary: #ffff00;
 }
+body[theme="homestuck"] {
+    --background: #dfdfdf;
+    --theme: #0ad53e;
+    --text: black;
+    --text-secondary: white;
+}
 
 body[theme="orchid"] {
   --background: #1c1c1c;
