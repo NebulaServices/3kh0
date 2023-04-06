@@ -1,11 +1,5 @@
 [
   {
-    "name": "dr does chemistry quiz",
-    "root": "doe",
-    "file": "index.html",
-    "img": "TemplateData/fullscreen.png"
-  },
-  {
     "name": "station meltdown",
     "root": "stationmeltdown",
     "file": "index.html",
