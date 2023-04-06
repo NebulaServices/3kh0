@@ -6,6 +6,12 @@
     "img": "TemplateData/fullscreen.png"
   },
   {
+    "name": "station meltdown",
+    "root": "stationmeltdown",
+    "file": "index.html",
+    "img": "image.png"
+  },
+  {
     "name": "checkers",
     "root": "checkers",
     "file": "checkers.html",
