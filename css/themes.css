@@ -25,6 +25,12 @@ body[theme="pink"] {
   --text: #39ff14;
   --text-secondary: #39ff14;
 }
+body[theme="blue"] {
+  --background: #062a78;
+  --theme: #062a78;
+  --text: #b0c4de;
+  --text-secondary: #b0c4de;
+}
 body[theme="yellow"] {
   --background: #ffff00;
   --theme: #ffff00;
