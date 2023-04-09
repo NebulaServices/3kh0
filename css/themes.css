@@ -34,7 +34,13 @@ body[theme="blue"] {
 body[theme="yellow"] {
   --background: #ffff00;
   --theme: #ffff00;
-  --text: #B58B00;
+  --text: #002147;
+  --text-secondary: #002147;
+}
+body[theme="40yearoldpedophileanddiscordmod"] {
+  --background: #321414;
+  --theme: #f4a460;
+  --text: #f4a460;
   --text-secondary: #B58B00;
 }
 body[theme="airtagschicken"] {
