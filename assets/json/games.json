@@ -6,6 +6,12 @@
     "img": "image.png"
   },
   {
+    "name": "highrise hop",
+    "root": "highrisehop",
+    "file": "index.html",
+    "img": "assets/gfx/logo.png"
+  },
+  {
     "name": "checkers",
     "root": "checkers",
     "file": "checkers.html",
