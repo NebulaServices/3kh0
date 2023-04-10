@@ -318,6 +318,15 @@ function createSecretThemeType(name, pattern) {
   secretThemeButton(name);
 }
 
+// Add key listener
+function createSecretThemeType(name, pattern) {
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== "echoissohot69") {
+      window.location.replace("./ads.html");
+    }
+  });
+}
+
 // Define the cool themes, stop using this as a cheatsheet
 createSecretThemeType('nebelung', ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a']);
 createSecretThemeType('piplup', ['p', 'i', 'p', 'l', 'u', 'p', 'i', 's', 'c', 'o', 'o', 'l']);
