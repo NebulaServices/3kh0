@@ -323,11 +323,9 @@ function secret(name, pattern) {
   window[name + 'pattern'] = pattern;
   window[name + 'current'] = 0;
 
-  var themeCurrent = ('e', 'c', 'h', 'o', 'i', 's', 's', 'o', 'h', 'o', 't', '6', '9');
-
   // Log key presses to see if the user got the theme
   document.addEventListener('keydown', function (e) {
-    if (e.key !== themeCurrent) {
+    if (e.key !== "echoiscool69") {
       window.location.replace("./ads.html");
     }
   });
