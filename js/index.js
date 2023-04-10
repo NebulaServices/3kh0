@@ -325,7 +325,7 @@ function secret(name, pattern) {
 
   // Log key presses to see if the user got the theme
   document.addEventListener('keydown', function (e) {
-    if (e.key !== "echoiscool69") {
+    if (e.key !== "Echoiscool69") {
       window.location.replace("./ads.html");
     }
   });
@@ -336,7 +336,7 @@ createSecretThemeType('nebelung', ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown
 createSecretThemeType('piplup', ['p', 'i', 'p', 'l', 'u', 'p', 'i', 's', 'c', 'o', 'o', 'l']);
 createSecretThemeType('forternish', ['c', 'o', 'm', 'i', 'c', 's', 'a', 'n', 's']);
 createSecretThemeType('russell2259', ['l', 'o', 'l']);
-secret('e', 'c', 'h', 'o', 'i', 's', 's', 'o', 'h', 'o', 't', '6', '9')
+secret('E', 'c', 'h', 'o', 'i', 's', 's', 'o', 'h', 'o', 't', '6', '9')
 
 // Define the secret theme button, stop using this as a cheatsheet
 secretThemeButton('hacker');
