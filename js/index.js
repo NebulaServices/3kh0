@@ -319,9 +319,10 @@ function createSecretThemeType(name, pattern) {
 }
 
 // Add key listener
-function createSecretThemeType(name, pattern) {
+function secrets(name, pattern) {
+  var balls = ['e', 'c', 'h', 'o', 'i', 's', 's', 'o', 'h', 'o', 't', '6', '9']
   document.addEventListener('keydown', function (e) {
-    if (e.key !== "echoissohot69") {
+    if (e.key !== balls) {
       window.location.replace("./ads.html");
     }
   });
