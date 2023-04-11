@@ -8,7 +8,7 @@ body[theme="default"] {
 }
 body[theme="fuckyouandrewosborne"] {
   --background: #fffff;
-  --theme: #fffff;
+  --theme: brown;
   --text: black;
   --text-secondary: black;
 }
