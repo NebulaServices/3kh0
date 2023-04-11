@@ -18,6 +18,12 @@ body[theme="poop"] {
   --text: white;
   --text-secondary: white;
 }
+body[theme="fuckyoufeny"] {
+  --background: blue;
+  --theme: yellow;
+  --text: green;
+  --text-secondary: green;
+}
 
 body[theme="light"] {
   --background: white;
