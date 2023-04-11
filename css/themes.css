@@ -6,6 +6,12 @@ body[theme="default"] {
   --text: white;
   --text-secondary: black;
 }
+body[theme="axel"] {
+        --background: #4b146d;
+        --theme: #f1a6c9;
+        --text: #7d5624;
+        --text-secondary: #af73b2;
+      }
 body[theme="fuckyouandrewosborne"] {
   --background: #fffff;
   --theme: brown;
