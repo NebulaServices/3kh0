@@ -8,7 +8,7 @@ body[theme="default"] {
 }
 body[theme="fuckyouandrewosborne"] {
   --background: #fffff;
-  --theme: #fffff;
+  --theme: brown;
   --text: black;
   --text-secondary: black;
 }
@@ -17,6 +17,12 @@ body[theme="poop"] {
   --theme: brown;
   --text: white;
   --text-secondary: white;
+}
+body[theme="fuckyoufeny"] {
+  --background: blue;
+  --theme: yellow;
+  --text: green;
+  --text-secondary: green;
 }
 
 body[theme="light"] {
