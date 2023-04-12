@@ -2,5 +2,8 @@
   "https://raw.githack.com/3kh0/3kh0-assets/main", 
   "https://cloudbase-labs.s3.amazonaws.com", 
   "https://d38a7mob3guz4f.cloudfront.net", 
+  "http://rawgit.com/3kh0/3kh0-assets/main/",
+  "https://cdn.statically.io/gh/3kh0/3kh0-assets/main/",
+  "http://web.archive.org/web/20230412012839/https://raw.githack.com/3kh0/3kh0-assets/main",
   "https://d1wnfatapmxxni.cloudfront.net"
 ]
