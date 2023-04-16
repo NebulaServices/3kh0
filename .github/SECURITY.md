@@ -5,10 +5,7 @@
 | Version | Supported          |
 | ------- | ------------------ |
 | Current site version  | :white_check_mark: |
-| Older versions of the latest major version | :x: |
-| v3 | :x: |
-| v2 | :x: |
-| v1 | :x: |
+| Any old version | :x: |
 
 ## Reporting a Vulnerability
 
