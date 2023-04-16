@@ -1,6 +1,6 @@
 <p align="center">
 <kbd>
-<img style="border-radius:50%" height="150px" src="https://raw.githubusercontent.com/3kh0/3kh0.github.io/main/images/logo.png">
+<img style="border-radius:50%" height="150px" src="http://web.archive.org/web/20230416012103/https://cdn.jsdelivr.net/gh/Rahib777-7/3kh0TEMP@main/images/logo.png">
 </kbd>
 </p>
 <h1 align="center">3kh0</h1>
