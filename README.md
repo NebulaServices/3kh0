@@ -1,6 +1,6 @@
 <p align="center">
 <kbd>
-<img style="border-radius:50%" height="150px" src="https://raw.githubusercontent.com/3kh0/3kh0.github.io/main/images/logo.png">
+<img style="border-radius:50%" height="150px" src="http://web.archive.org/web/20230416012103if_/https://cdn.jsdelivr.net/gh/Rahib777-7/3kh0TEMP@main/images/logo.png">
 </kbd>
 </p>
 <h1 align="center">3kh0</h1>
@@ -11,7 +11,7 @@ This is the GitHub repo which is used to host the website. If you want to use th
 ## This is only the temporary repository for the website. As soon as the official repo comes back up, this repo will become obsolete.
 
 <!-- More people will be using light mode in their web browser -->
-[![Join us on Discord](https://invidget.switchblade.xyz/wv6huJAwEv?theme=light)](https://discord.gg/wv6huJAwEv)
+[![Join us on Discord](https://invidget.switchblade.xyz/wv6huJAwEv?theme=light)](https://discord.io/3kh0_)
 
 > **Note**
 > **If you do fork this repo, please give the orginal repo a star! It helps out alot and only 30% of people who fork give me a star.**
