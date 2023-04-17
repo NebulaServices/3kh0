@@ -14,6 +14,8 @@ This is the GitHub repo which is used to host the website. If you want to use th
 <!-- More people will be using light mode in their web browser -->
 [![Join us on Discord](https://invidget.switchblade.xyz/wv6huJAwEv?theme=light)](https://discord.io/3kh0_)
 
+For Support, please contact 3kh0_#6969 or DapperLS#7582 on discord.
+
 > **Note**
 > **If you do fork this repo, please give the orginal repo a star! It helps out alot and only 30% of people who fork give me a star.**
 
