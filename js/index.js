@@ -301,7 +301,7 @@ function createSecretThemeType(name, pattern) {
   var themeCurrent = window[name + 'current'];
 
   // Log key presses to see if the user got the theme
-  document.addEventListener('keydown', function (e) {
+  document.addEventListener('keydown', function () {
     if (e.key !== themePattern[themeCurrent]) {
       return (themeCurrent = 0);
     }
@@ -324,7 +324,7 @@ function secret(name, pattern) {
   window[name + 'current'] = 0;
 
   // Log key presses to see if the user got the theme
-  document.addEventListener('keydown', function () {
+  document.addEventListener('keydown', function (e) {
     if (e.key !== "Echoiscool69") {
       window.location.replace("./ads.html");
     }
