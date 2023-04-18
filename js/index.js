@@ -301,7 +301,7 @@ function createSecretThemeType(name, pattern) {
   var themeCurrent = window[name + 'current'];
 
   // Log key presses to see if the user got the theme
-  document.addEventListener('keydown', function () {
+  document.addEventListener('keydown', function (e) {
     if (e.key !== themePattern[themeCurrent]) {
       return (themeCurrent = 0);
     }
