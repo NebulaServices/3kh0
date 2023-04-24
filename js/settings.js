@@ -134,8 +134,8 @@ function setCloak() { // applies only to premade cloaks
       setFavicon("https://ar.wikipedia.org/favicon.ico");
       location.reload();
       break;
-      case "search": // billibilli
-      setTitle("bsite");
+      case "bsite": // billibilli
+      setTitle("Billibilli");
       setFavicon("https://www.bilibili.com/favicon.ico");
       location.reload();
       break;
