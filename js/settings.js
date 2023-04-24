@@ -124,6 +124,21 @@ function setCloak() { // applies only to premade cloaks
       setFavicon("./images/cloaks/Google Search.ico");
       location.reload();
       break;
+      case "itchio": // itch.io
+      setTitle("Top free NSFW games for web");
+      setFavicon("./images/cloaks/D23D344B-4CB0-4799-B525-F4E4F3A36728.ico");
+      location.reload();
+      break;
+      case "wikipedia": // wikipedia
+      setTitle("ويكيبيديا - جهاد");
+      setFavicon("https://ar.wikipedia.org/favicon.ico");
+      location.reload();
+      break;
+      case "search": // billibilli
+      setTitle("bsite");
+      setFavicon("https://www.bilibili.com/favicon.ico");
+      location.reload();
+      break;
     case "drive": // Google Drive
       setTitle("My Drive - Google Drive");
       setFavicon("./images/cloaks/Google Drive.ico");
