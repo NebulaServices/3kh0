@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Calculator</title>
+  <meta name="description" content="Simple Calculator With Dark Mode." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="assets/calculator.ico">
+  <link rel="stylesheet" href="https://web.archive.org/web/20230424222900/https://cdn.jsdelivr.net/gh/Rahib777-7/Calculator@master/styles/dark.css" id="theme" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://web.archive.org/web/20200411042443/https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src='https://cdn.jsdelivr.net/nwmatcher/1.2.5/nwmatcher.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/json2/0.2/json2.min.js'></script>
+    <script src='https://cdn.rawgit.com/gisu/selectivizr/1.0.3/selectivizr.js'></script>
+    <script src='https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/es5.shim/4.4.1/es5-shim.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/rahib777-7/flashcanvas@master/bin/flashcanvas.js'></script>
+    <script src="https://cdn.jsdelivr.net/gh/Rahib777-7/JSON-js@master/json2.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Rahib777-7/JSON-js@master/cycle.js"></script>
+    <script src="http://web.archive.org/web/20131006060208/http://b-c.googlecode.com/hg/bin/bc.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Rahib777-7/browsercrosser@main/polyfill.js"></script>
+    <script src="https://web.archive.org/web/20180602055556/https://raw.githubusercontent.com/philipwalton/polyfill/master/dist/polyfill.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/philipwalton/polyfill@master/dist/polyfill.min.js"></script>
+    <script src="http://web.archive.org/web/20230408073425/https://unpkg.com/@webcomponents/webcomponentsjs@2.8.0/webcomponents-bundle.js"></script>
+<script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.8.0/webcomponents-bundle.js"></script>
+    <script src="https://web.archive.org/web/20220604072548/https://webpjs.appspot.com/js/webpjs-0.0.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Rahib777-7/webpjs@main/a.js"></script>
+    <script src="https://web.archive.org/web/20170617072737/http://webpjs.appspot.com/js/webpjs-0.0.2.swf"></script>
+    <script src="http://web.archive.org/web/20230412023529/https://use.fontawesome.com/526e68a831.js"></script>
+<script src="http://use.fontawesome.com/526e68a831.js"></script>
+    <script src="https://web.archive.org/web/20230412181055/https://cdn.jsdelivr.net/gh/cimaron/cwebgl@master/cWebGL.js"></script> 
+<script src="https://cdn.jsdelivr.net/gh/cimaron/cwebgl@master/cWebGL.js"></script> 
+<script src="https://web.archive.org/web/20230412181959/https://cdn.jsdelivr.net/gh/jonathantneal/flexibility@master/flexibility.js"></script> 
+<script src="https://cdn.jsdelivr.net/gh/jonathantneal/flexibility@master/flexibility.js"></script> 
+<script src="https://web.archive.org/web/20230412182519/https://cdn.jsdelivr.net/gh/postcss/autoprefixer@main/lib/autoprefixer.js"></script> 
+<script src="https://cdn.jsdelivr.net/gh/postcss/autoprefixer@main/lib/autoprefixer.js></script> 	
+<script src="https://web.archive.org/web/20230412182935/https://cdn.jsdelivr.net/gh/bestiejs/json3@master/lib/json3.js></script> 	
+<script src="https://web.archive.org/web/20150917154149/http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js></script> 
+<script src="https://web.archive.org/web/20150917090530/http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js></script> 
+<script src="https://web.archive.org/web/20150917092849/http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js></script> 
+<script src="https://cdn.jsdelivr.net/gh/neovov/Fullscreen-API-Polyfill@master/fullscreen-api-polyfill.js></script>
+<script src="https://web.archive.org/web/20230412183719/https://cdn.jsdelivr.net/gh/neovov/Fullscreen-API-Polyfill@master/fullscreen-api-polyfill.js></script>
+             <script src="https://web.archive.org/web/20230412212616/https://cdn.jsdelivr.net/gh/Rahib777-7/ruffle@main/ruffle/ruffle.js"></script> 
+<script src="https://cdn.jsdelivr.net/gh/Rahib777-7/ruffle@main/ruffle/ruffle.js"></script> 
+<script src="https://web.archive.org/web/20230412213717/https://cdn.jsdelivr.net/gh/Rahib777-7/swf2js@main/a.js"></script> 
+<script src="https://cdn.jsdelivr.net/gh/Rahib777-7/swf2js@main/a.js"></script>
+                                                                     <script src="https://cdn.jsdelivr.net/gh/Rahib777-7/waflash2@main/js/embed.js"></script> 
+<script src="https://web.archive.org/web/20230413182157/https://cdn.jsdelivr.net/gh/Rahib777-7/waflash2@main/js/embed.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Rahib777-7/waflash2@main/waflash/waflash-player.min.js"></script>
+<script src="https://web.archive.org/web/20230413182859/https://cdn.jsdelivr.net/gh/Rahib777-7/waflash2@main/waflash/waflash-player.min.js"></script>  
+<script src="https://cdn.jsdelivr.net/gh/Rahib777-7/waflash2@main/waflash/waflash.js"></script>
+<script src="https://web.archive.org/web/20230413183526/https://cdn.jsdelivr.net/gh/Rahib777-7/waflash2@main/waflash/waflash.js"></script>  
+<script src="https://cdn.jsdelivr.net/gh/Rahib777-7/waflash2@main/js/jquery.min.js"></script>
+<script src="https://web.archive.org/web/20230413183831/https://cdn.jsdelivr.net/gh/Rahib777-7/waflash2@main/js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Rahib777-7/waflash2@main/js/flash_detect.js"></script>
+<script src="https://web.archive.org/web/20230413184114/https://cdn.jsdelivr.net/gh/Rahib777-7/waflash2@main/js/flash_detect.js"></script>
+                                                                                                                                <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                                                                                                                
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="header-container">
+        <!-- This heading also notifies about the theme change.-->
+        <h1 id="toast">Calculator</h1>
+        <div class="top-buttons">
+          <a href="https://github.com/zxcodes/JavaScript-Calculator">
+            <img src="https://cdn.jsdelivr.net/gh/Rahib777-7/Calculator@master/assets/GitHubLight.svg" alt="Sun Icon" height="22.5" width="22.5" id="github-icon">
+          </a>
+        </div>
+      </div>
+      <div class="first-row">
+        <input type="text" name="result" id="result" placeholder="Result" readonly />
+        <input type="button" value="C" onclick="result.value=''" id="clear-button" />
+      </div>
+      <div class="second-row">
+        <input type="button" value="1" onclick="liveScreen(1)" />
+        <input type="button" value="2" onclick="liveScreen(2)" />
+        <input type="button" value="3" onclick="liveScreen(3)" />
+        <input type="button" value="+" onclick="liveScreen('+')" />
+      </div>
+      <div class="third-row">
+        <input type="button" value="4" onclick=" liveScreen(4)" />
+        <input type="button" value="5" onclick=" liveScreen(5)" />
+        <input type="button" value="6" onclick=" liveScreen(6)" />
+        <input type="button" value="-" onclick="liveScreen('-')" />
+      </div>
+      <div class="fourth-row">
+        <input type="button" value="7" onclick="liveScreen(7)" />
+        <input type="button" value="8" onclick="liveScreen(8)" />
+        <input type="button" value="9" onclick=" liveScreen(9)" />
+        <input type="button" value="x" onclick="liveScreen('*')" />
+      </div>
+      <div class="fifth-row">
+        <input type="button" value="/" onclick="liveScreen('/')" />
+        <input type="button" value="0" onclick="liveScreen(0)" />
+        <input type="button" value="." onclick="liveScreen('.')" />
+        <input type="button" value="=" onclick="calculate(result.value)" />
+      </div>
+    </div>
+  </div>
+  <script src="https://web.archive.org/web/20230424222240/https://cdn.jsdelivr.net/gh/Rahib777-7/Calculator@master/scripts/script.js">
+  </script>
+</body>
+
+</html>
