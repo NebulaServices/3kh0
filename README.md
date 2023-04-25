@@ -62,7 +62,8 @@ The official 3kh0 docs can be found [here](https://github.com/3kh0/3kh0.github.i
 
 Thank you to all of these amazing people for helping work on this project!
 
-[![Contrib](https://contrib.rocks/image?repo=3kh0/3kh0.github.io#)](https://github.com/3kh0/3kh0.github.io/graphs/contributors)
+> This graph is currently unavailable because of an issue with Github's TOS.
+> We are working on getting this back up.
 
 And the people who worked on v3!
 
@@ -70,7 +71,8 @@ And the people who worked on v3!
 
 And the people who worked on v2!
 
-[![Contrib](https://contrib.rocks/image?repo=3kh0/website-v2#)](https://github.com/3kh0/website-v2/graphs/contributors)
+> This graph is currently unavailable because of an issue with Github's TOS.
+> We are working on getting this back up.
 
 And the people who worked on v1!
 
