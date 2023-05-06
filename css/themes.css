@@ -18,6 +18,12 @@ body[theme="fuckyouandrewosborne"] {
   --text: black;
   --text-secondary: black;
 }
+body[theme="if_you_are_reading_this_are_you_skidding?_or_just_looking_at_code"] {
+--background: #1448f5;
+  --theme: #6c06ba;
+  --text: #14f5f5;
+  --text-secondary: white;
+}
 body[theme="poop"] {
   --background: black;
   --theme: brown;
