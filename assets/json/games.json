@@ -1110,6 +1110,12 @@
 		"img": "pack.png"
 	},
 	{
+		"name": "FSUCraft",
+		"root": "fsucraft",
+		"file": "index.html",
+		"img": "https://static.planetminecraft.com/files/resource_media/screenshot/1326/Survival-GUI-on-FSU-Craft_5833918.jpg"
+	},
+	{
 		"name": "Minecraft Classic Hacks",
 		"root": "minecraftbeta",
 		"file": "index.html",
