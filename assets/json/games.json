@@ -1110,6 +1110,12 @@
 		"img": "pack.png"
 	},
 	{
+		"name": "FSUCraft",
+		"root": "fsucraft",
+		"file": "index.html",
+		"img": "notexist.png"
+	},
+	{
 		"name": "Minecraft Classic Hacks",
 		"root": "minecraftbeta",
 		"file": "index.html",
