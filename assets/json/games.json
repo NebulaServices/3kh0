@@ -1,5 +1,29 @@
 [
 	{
+		"name": "monkeymart",
+		"root": "mart",
+		"file": "Monkey Marr.html",
+		"img": "meta/apple-touch-icon.png"
+	},
+	{
+		"name": "swarmsimulator",
+		"root": "swarmsimulator",
+		"file": "Swarm Simulator.html",
+		"img": "meta/apple-touch-icon.png"
+	},
+	{
+		"name": "idledice",
+		"root": "idledice",
+		"file": "Idle Dice.html",
+		"img": "meta/apple-touch-icon.png"
+	},
+	{
+		"name": "particleclicker",
+		"root": "particleclicker",
+		"file": "particle clicker OG.html",
+		"img": "meta/--icon.png"
+	},
+	{
 		"name": "1",
 		"root": "1",
 		"file": "index.html",
