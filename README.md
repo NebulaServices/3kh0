@@ -16,8 +16,8 @@ This is the GitHub repo which is used to host the website. If you want to use th
 > **Note**
 > **If you do fork this repo, please give the orginal repo a star! It helps out alot and only 30% of people who fork give me a star.**
 
-[![Stargazers repo roster for @3kh0/3kh0.github.io](https://reporoster.com/stars/light/3kh0/3kh0.github.io)](https://github.com/3kh0/3kh0.github.io/stargazers)
-[![Forkers repo roster for @3kh0/3kh0.github.io](https://reporoster.com/forks/light/3kh0/3kh0.github.io)](https://github.com/3kh0/3kh0.github.io/network/members)
+[![Stargazers repo roster for @3kh0/website-v4](https://reporoster.com/stars/light/3kh0/website-v4)](https://github.com/3kh0/website-v4/stargazers)
+[![Forkers repo roster for @3kh0/website-v4](https://reporoster.com/forks/light/3kh0/website-v4)](https://github.com/3kh0/website-v4/network/members)
 
 ## Features
 
@@ -36,13 +36,13 @@ This is the GitHub repo which is used to host the website. If you want to use th
 Due to the amount of games, all of the games have been moved to a [new repo](https://github.com/3kh0/3kh0-Assets).
 
 ## Host the CDN
-Thanks to [@Russell2259](https://github.com/Russell2259/) you can host your own 3kh0 CDN, instructions are located [here](https://github.com/3kh0/3kh0.github.io/wiki/Create-A-CDN-Server).
+Thanks to [@Russell2259](https://github.com/Russell2259/) you can host your own 3kh0 CDN, instructions are located [here](https://3kh0.gitbook.io/wiki/create-a-cdn-server-for-3kh0).
 
 ## Host the website
 
 You can host our website on a cloud hosting solution like Replit or Render here. If you're unsure on what this does, use our own site, or find one someone else is hosting. <br>
 
-[![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://github.com/3kh0/3kh0.github.io-replit)
+[![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://github.com/3kh0/website-v4-replit)
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/3kh0/website-v4)
 [![Deploy to IBM Cloud](https://binbashbanana.github.io/deploy-buttons/buttons/remade/ibmcloud.svg)](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/3kh0/website-v4)
 [![Deploy to Amplify Console](https://binbashbanana.github.io/deploy-buttons/buttons/remade/amplifyconsole.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/3kh0/website-v4)
@@ -53,12 +53,12 @@ You can host our website on a cloud hosting solution like Replit or Render here.
 [![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/3kh0/website-v4)
 
 ## Docs
-The official 3kh0 docs can be found [here](https://github.com/3kh0/3kh0.github.io/wiki). If you want to make a theme this is the place!
+The official 3kh0 docs can be found [here](https://3kh0.gitbook.io/wiki/). If you want to make a theme this is the place!
 
 ## Contributors
 
 Thank you to all of these amazing people for helping work on this project!
-[![Contrib](https://contrib.rocks/image?repo=3kh0/3kh0.github.io#)](https://github.com/3kh0/3kh0.github.io/graphs/contributors)
+[![Contrib](https://contrib.rocks/image?repo=3kh0/website-v4#)](https://github.com/3kh0/website-v4/graphs/contributors)
 > This graph is currently unavailable because of an issue with Github's TOS.
 > We are working on getting this back up.
 
@@ -79,9 +79,9 @@ And the people who worked on v1!
 
 Contributions are always welcome!
 
-See [`contributing.md`](https://github.com/3kh0/3kh0.github.io/blob/main/CONTRIBUTING.md) for ways to get started.
+See [`contributing.md`](https://github.com/3kh0/3kh0-v4/blob/main/CONTRIBUTING.md) for ways to get started.
 
-Please adhere to this project's [Code of Conduct](https://github.com/3kh0/3kh0.github.io/blob/main/.github/CODE_OF_CONDUCT.md).
+Please adhere to this project's [Code of Conduct](https://github.com/3kh0/3kh0-v4/blob/main/.github/CODE_OF_CONDUCT.md).
 
 If you would like to help add games, you can do that here: [3kh0/3kh0-Assets](https://github.com/3kh0/3kh0-Assets), this repo only has the UI and other things
 
