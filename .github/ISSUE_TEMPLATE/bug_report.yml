@@ -13,7 +13,7 @@ body:
           required: true
         - label: I have submitted screenshots of the error
           required: true
-        - label: You are not using the website on any clones (you are using 3kh0.github.io and nothing else)
+        - label: You are not using the website on any clones (you are using 3kh0.net and nothing else)
           required: true
         - label: I just checked all of these boxes without reading the labels
           required: false
@@ -24,6 +24,7 @@ body:
       options:
         - Google Chrome
         - Mozilla Firefox
+        - Brave
         - Microsoft Edge
         - Apple Safari
         - Other
@@ -44,6 +45,8 @@ body:
         - Windows Laptop (or any device running Windows)
         - Macbook (or any device running macOS)
         - iPhone
+        - Android phone
+        - Android tablet
         - Other (please note in text field below)
     validations:
       required: true
