@@ -1,5 +1,17 @@
 [
 	{
+		"name": "run 3 (adobe flash required)",
+		"root": "legacyflashgames",
+		"file": "run3flash/run3.swf",
+		"img": "meta/apple-touch-icon.png"
+	},
+	{
+		"name": "run 3 (adobe flash required)",
+		"root": "legacyflashgames",
+		"file": "run3flash/run3.swf",
+		"img": "meta/apple-touch-icon.png"
+	},
+	{
 		"name": "monkeymart",
 		"root": "mart",
 		"file": "Monkey Marr.html",
