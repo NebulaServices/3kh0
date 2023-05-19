@@ -1,5 +1,11 @@
 [
 	{
+		"name": "swarmsimulator",
+		"root": "swarmsimulator",
+		"file": "Swarm Simulator.html",
+		"img": "meta/apple-touch-icon.png"
+	},
+	{
 		"name": "idledice",
 		"root": "idledice",
 		"file": "Idle Dice.html",
