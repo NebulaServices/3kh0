@@ -1,5 +1,11 @@
 [
 	{
+		"name": "idledice",
+		"root": "idledice",
+		"file": "Idle Dice.html",
+		"img": "meta/apple-touch-icon.png"
+	},
+	{
 		"name": "1",
 		"root": "1",
 		"file": "index.html",
