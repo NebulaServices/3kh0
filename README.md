@@ -90,13 +90,13 @@ If you would like to help add games, you can do that here: [3kh0/3kh0-Assets](ht
 First clone the project using command line
 
 ```bash
-git clone https://github.com/3kh0/3kh0.github.io.git
+git clone https://github.com/3kh0/website-v4.git
 ```
 
 or if you have GitHub CLI
 
 ```bash
-gh repo clone 3kh0/3kh0.github.io
+gh repo clone 3kh0/website-v4
 ```
 
 Since this project does not require a backend, for the best experience I suggest using [XAMPP](https://www.apachefriends.org/), cloning the repo into the Apache Server directory at `C:\xampp\htdocs` (for windows) or `/opt/lampp/htdocs` (for linux), setting the port to something like 8080, opening up a browser and going to [`localhost:8080`](http://localhost:8080)
@@ -121,7 +121,7 @@ http-server
 > Cloning a repository with Git removes everything in the folder you do it in. If you're not careful, you can delete your hard drive, so please do not do this unless you know what you're doing.
 
 ## License
-View the full license [here](https://github.com/3kh0/3kh0.github.io/blob/main/LICENSE)
+View the full license [here](https://github.com/3kh0/website-v4/blob/main/LICENSE)
 
 ## Previous versions
 
