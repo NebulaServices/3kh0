@@ -6,6 +6,12 @@
 		"img": "meta/apple-touch-icon.png"
 	},
 	{
+		"name": "particleclicker",
+		"root": "particleclicker",
+		"file": "Idle Dice.html",
+		"img": "meta/--icon.png"
+	},
+	{
 		"name": "1",
 		"root": "1",
 		"file": "index.html",
