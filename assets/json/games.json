@@ -6,9 +6,21 @@
 		"img": "meta/apple-touch-icon.png"
 	},
 	{
-		"name": "run 3 (adobe flash required)",
+		"name": "mctd2 (adobe flash required)",
 		"root": "legacyflashgames",
-		"file": "run3flash/run3.swf",
+		"file": "minecraft-tower-defence-2/minecraft-tower-defence-2.swf",
+		"img": "meta/apple-touch-icon.png"
+	},
+	{
+		"name": "flash golf 2001 (adobe flash required)",
+		"root": "legacyflashgames",
+		"file": "flashgolf_2001.swf",
+		"img": "meta/apple-touch-icon.png"
+	},
+	{
+		"name": "binding of issac (adobe flash required)",
+		"root": "legacyflashgames",
+		"file": "bindingofissac/tboi.swf",
 		"img": "meta/apple-touch-icon.png"
 	},
 	{
