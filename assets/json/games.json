@@ -1,5 +1,11 @@
 [
 	{
+		"name": "snowrider3d",
+		"root": "snowrider3d",
+		"file": "index.html",
+		"img": "images/logo.png"
+	},
+	{
 		"name": "run 3 (adobe flash required)",
 		"root": "legacyflashgames",
 		"file": "run3flash/run3.swf",
