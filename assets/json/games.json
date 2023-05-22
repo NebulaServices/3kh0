@@ -1,4 +1,83 @@
 [
+	
+        {
+		"name": "cookieclicker2052",
+		"root": "cookie-clicker-beta",
+		"file": "index.html",
+		"img": "img/perfectCookie.png"
+	},
+	{
+		"name": "cookieclicker2049",
+		"root": "cookieclicker2049",
+		"file": "index.html",
+		"img": "img/perfectCookie.png"
+	}, 
+	{
+		"name": "cookieclicker2047",
+		"root": "cookieclicker2047",
+		"file": "index.html",
+		"img": "img/perfectCookie.png"
+	},
+	{
+		"name": "cookieclicker2021",
+		"root": "cookieclicker2021",
+		"file": "index.html",
+		"img": "img/perfectCookie.png"
+	},
+        {
+		"name": "cookieclicker2019",
+		"root": "cookieclicker2019",
+		"file": "index.html",
+		"img": "img/perfectCookie.png"
+	},
+        {
+		"name": "cookieclicker200252",
+		"root": "cookieclicker200252",
+		"file": "index.html",
+		"img": "img/perfectCookie.png"
+	},
+        {
+		"name": "cookieclicker2002",
+		"root": "cookieclicker2002",
+		"file": "index.html",
+		"img": "img/perfectCookie.png"
+	},
+	{
+		"name": "cookieclicker10511",
+		"root": "cookieclicker10511",
+		"file": "index.html",
+		"img": "img/perfectCookie.png"
+	},
+	{
+		"name": "cookieclickerv1021",
+		"root": "cookieclickerv1021",
+		"file": "index.html",
+		"img": "img/perfectCookie.png"
+	},
+	{
+		"name": "cookieclickerv1037",
+		"root": "cookieclickerv1037",
+		"file": "index.html",
+		"img": "img/perfectCookie.png"
+	},
+	{
+		"name": "run4bootleg",
+		"root": "run4bootleg",
+		"file": "index.html",
+		"img": "55favicon.ico"
+	},
+	{
+		"name": "runner",
+		"root": "runner",
+		"file": "index.html",
+		"img": "loading3860.png"
+	},
+	{
+		"name": "idledices",
+		"root": "idledices",
+		"file": "index.html",
+		"img": "images/icon32.png"
+	},
 	{
 		"name": "snowrider3d",
 		"root": "snowrider3d",
