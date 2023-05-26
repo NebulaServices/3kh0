@@ -1,9 +1,4 @@
-## This website has been shutdown.
-
-Hello everyone,
-
-I hope you all are doing well. I have some sad news to bring to you all. 3kh0.net will be shutting down, effective immediately. This was not a choice made lightly, and I would HIGHLY recommend that you read this document about why and the future of it: https://rentry.co/3kh0. I also suggest that you join [the discord server](https://discord.gg/3kh0) as we will have more stuff planned there. Thank you.
-
+# 3kh0 Reborn
 
 
 <p align="center">
