@@ -102,24 +102,8 @@ const instance = encodeURIComponent(origin.replace(location.origin, ''));
 
 // If we have onLoadData, we run it now
 
-window.addEventListener('load', () => {
-  if (onLoadData) {
-    try {
-      eval(onLoadData);
-    } catch(e) {
-      console.error(e);
-    }
-  }
 
-  // Set up the WidgetBot crate
-  if(Crate) {
-    crate = new Crate({
-      server: '971769908205604864', // EchoDev
-      channel: '1017203047388160050', // #guest-chat
-      // notifications: false,
-  })
-  }
-});
+ 
 
 // If we have any errors, we will log it
 window.addEventListener('error', (e) => {
@@ -127,9 +111,6 @@ window.addEventListener('error', (e) => {
 });
 
 // Add the main script in the <head> tags
-const jsdelivr = document.createElement('script');
-jsdelivr.setAttribute('src', 'https://cdn.jsdelivr.net/gh/3kh0/3kh0.github.io/js/main.js');
-document.head.append(jsdelivr);
 
 // Collect Tab Cloak data from local storage
 var tab = localStorage.getItem('tab');
@@ -215,47 +196,9 @@ fetch(origin + 'assets/json/themes.json')
   });
 
 // Add the changelogAdded element for the changelog
-class changelogAdded extends HTMLElement {
-  constructor() {
-    super();
-    this.innerHTML = `
-        <div class="changelog-item">
-        <div class="changelog-type" added></div>
-        ${this.innerText}
-        </div>
-        `;
-  }
-}
 
-customElements.define('changelog-added', changelogAdded);
 
-// Add the changelogRemoved element for the changelog
-class changelogRemoved extends HTMLElement {
-  constructor() {
-    super();
-    this.innerHTML = `
-        <div class="changelog-item">
-        <div class="changelog-type" removed></div>
-        ${this.innerText}
-        </div>
-        `;
-  }
-}
-customElements.define('changelog-removed', changelogRemoved);
 
-// Add the changelogChanged element for the changelog
-class changelogChanged extends HTMLElement {
-  constructor() {
-    super();
-    this.innerHTML = `
-        <div class="changelog-item">
-        <div class="changelog-type" changed></div>
-        ${this.innerText}
-        </div>
-        `;
-  }
-}
-customElements.define('changelog-changed', changelogChanged);
 
 // Parrot theme random colors
 function setParrotColors() {
@@ -292,42 +235,4 @@ function secretThemeButton(name) {
   }
 }
 
-// Keybind themes
-function createSecretThemeType(name, pattern) {
-  window[name + 'pattern'] = pattern;
-  window[name + 'current'] = 0;
 
-  var themePattern = window[name + 'pattern'];
-  var themeCurrent = window[name + 'current'];
-
-  // Log key presses to see if the user got the theme
-  document.addEventListener('keydown', function (e) {
-    if (e.key !== themePattern[themeCurrent]) {
-      return (themeCurrent = 0);
-    }
-
-    // Add this to the theme list
-    themeCurrent++;
-
-    if (themePattern.length == themeCurrent) {
-      themeCurrent = 0;
-      foundSecretTheme(name);
-    }
-  });
-
-  secretThemeButton(name);
-}
-
-// Define the cool themes, stop using this as a cheatsheet
-createSecretThemeType('nebelung', ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a']);
-createSecretThemeType('piplup', ['p', 'i', 'p', 'l', 'u', 'p', 'i', 's', 'c', 'o', 'o', 'l']);
-createSecretThemeType('forternish', ['c', 'o', 'm', 'i', 'c', 's', 'a', 'n', 's']);
-createSecretThemeType('russell2259', ['l', 'o', 'l']);
-
-// Define the secret theme button, stop using this as a cheatsheet
-secretThemeButton('hacker');
-
-// Handle the secret theme button
-window.nebelung_the_hacker = function () {
-  foundSecretTheme('hacker');
-};
