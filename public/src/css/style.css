@@ -157,7 +157,7 @@ body {
 }
 
 .navitem {
-  border-radius: 35px;
+  border-radius: 6px;
   padding: 10px 8px;
   font-size: 15px;
   background: transparent;
@@ -246,11 +246,12 @@ footer {
 }
 
 .games {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
-  justify-content: space-between;
-  grid-gap: 2rem;
-  margin: 1rem 2rem 2rem 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 .game {
@@ -260,7 +261,6 @@ footer {
   color: var(--text);
   text-decoration: none;
   border-radius: 15px;
-  cursor: pointer;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -269,6 +269,8 @@ footer {
   user-select: none;
   position: relative;
   transition: 0.5s;
+  margin: 22px;
+  padding: 20px;
 }
 
 .game:hover {
@@ -334,13 +336,17 @@ footer {
   margin: 0 1rem;
   user-select: none;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
 }
 
 .button {
   background: var(--theme);
   width: fit-content;
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 6px;
   cursor: pointer;
   color: var(--text-secondary);
   border: 0;
@@ -351,7 +357,7 @@ footer {
   background: var(--theme);
   width: 200px;
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 6px;
   outline: none;
   color: var(--text-secondary);
 }
@@ -361,7 +367,7 @@ select {
   background: var(--theme);
   width: 200px;
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 6px;
   outline: none;
   color: var(--text-secondary);
 }
