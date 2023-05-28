@@ -6,6 +6,7 @@ const routes = [
     { path: "/about", file: "about.html" },
     { path: "/credits", file: "credits.html" },
     { path: "/404", file: "404.html" },
+    { path: "/login", file: "login.html" },
     { path: "/projects", file: "projects.html" },
     { path: "/assets/game", file: "src/assets/game.html" }
   ]
