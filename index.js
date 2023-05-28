@@ -22,7 +22,7 @@ routes.forEach((route) => {
   app.get(route.path, handlers);
 });
 
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname, 'src')));
 
 const server = http.createServer(app);
 server.listen(port, () => {
