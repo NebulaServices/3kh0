@@ -1,9 +1,24 @@
 {
+  "name": "3kh0",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NebulaServices/3kh0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NebulaServices/3kh0/issues"
+  },
+  "homepage": "https://github.com/NebulaServices/3kh0#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "Express": "^3.0.1",
-    "http": "^0.0.1-security",
-    "path": "^0.12.7"
+    "express": "^4.18.2"
   }
 }
