@@ -211,11 +211,12 @@ body {
   user-select: none;
   border: none;
   color: var(--text-secondary);
-  transition: transform 0.5s;
+  transition: transform 500ms;
+  transition: background 250ms;
 }
 
 .play:hover {
-  transform: scaleX(1.4) scaleY(1.4) rotate(9deg);
+  background: var(--theme-hover);
 }
 
 a {
