@@ -8,7 +8,7 @@ import routes from "./routes/routes.js"
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const port = 6003;
+const port = 5000;
 const app = express();
 
 
