@@ -11,74 +11,81 @@ and adds click event listeners to show the game in a game container.
 The code also includes functions to handle saving and loading user data as well as a function to handle a specific key sequence.
 */
 // Select the elements
-const gamesContainer = document.querySelector('.games');
-const searchBar = document.querySelector('.searchbar');
-const gameContainer = document.querySelector('.gamecontainer');
-const gameFrame = gameContainer.querySelector('.frame');
-const gameNav = gameContainer.querySelector('.nav');
+const gamesContainer = document.querySelector(".games");
+const searchBar = document.querySelector(".searchbar");
+const gameContainer = document.querySelector(".gamecontainer");
+const gameFrame = gameContainer.querySelector(".frame");
+const gameNav = gameContainer.querySelector(".nav");
 
 // Listen for input event on the search bar
-searchBar.addEventListener('input', (e) => {
+searchBar.addEventListener("input", (e) => {
   const query = searchBar.value.trim().toLowerCase();
 
   // Loop through all the games in the container and show/hide them depending on whether they match the search query
   for (let game of gamesContainer.children) {
     if (game instanceof Element) {
       if (query) {
-        const gameName = game.querySelector('span').innerText.trim().toLowerCase();
+        const gameName = game
+          .querySelector("span")
+          .innerText.trim()
+          .toLowerCase();
         if (gameName.includes(query)) {
-          game.removeAttribute('hidden');
+          game.removeAttribute("hidden");
         } else {
-          game.setAttribute('hidden', '');
+          game.setAttribute("hidden", "");
         }
       } else {
-        game.removeAttribute('hidden');
+        game.removeAttribute("hidden");
       }
     }
   }
 
   // If there are no games shown, display the "No games" message, otherwise hide it
-  if (document.querySelectorAll('.game:not([hidden])').length == 0) {
-    document.querySelector('.nogames').style.display = 'initial';
+  if (document.querySelectorAll(".game:not([hidden])").length == 0) {
+    document.querySelector(".nogames").style.display = "initial";
   } else {
-    document.querySelector('.nogames').style.display = 'none';
+    document.querySelector(".nogames").style.display = "none";
   }
 });
 
 // Fetch the games data from a JSON file
-fetch('./assets/json/games.json')
+fetch("./assets/json/games.json")
   .then((res) => res.json())
   .then((games) => {
     // Loop through each game and create a new game element for it
     games.forEach((game) => {
-      const gameEl = document.createElement('div');
-      gameEl.className = 'game';
-      gameEl.innerHTML = `<img src="${cdn + game.root + "/" + game.img}"/><span>${game.name}</span>`;
+      const gameEl = document.createElement("div");
+      gameEl.className = "game";
+      gameEl.innerHTML = `<img src="${
+        cdn + game.root + "/" + game.img
+      }"/><span>${game.name}</span>`;
       gamesContainer.appendChild(gameEl);
 
       // Add click event listener to the game element to show the game in the game container
       gameEl.onclick = (e) => {
-        gamesContainer.classList.add('hidden');
-        searchBar.classList.add('hidden');
-        gameContainer.classList.remove('hidden');
-        document.querySelector('.saveItems').classList.add('hidden');
-        document.querySelector('.navbar').classList.add('noshadow');
-        gameFrame.querySelector('iframe').src = `./assets/game?game=${game.root}`;
-        gameNav.querySelector('span').textContent = game.name;
+        gamesContainer.classList.add("hidden");
+        searchBar.classList.add("hidden");
+        gameContainer.classList.remove("hidden");
+        document.querySelector(".saveItems").classList.add("hidden");
+        document.querySelector(".navbar").classList.add("noshadow");
+        gameFrame.querySelector(
+          "iframe"
+        ).src = `./assets/game?game=${game.root}`;
+        gameNav.querySelector("span").textContent = game.name;
       };
 
       // Add click event listener to the back button in the game container to go back to the games list
-      gameNav.querySelector('#back').addEventListener('click', (e) => {
-        gamesContainer.classList.remove('hidden');
-        searchBar.classList.remove('hidden');
-        gameContainer.classList.add('hidden');
-        document.querySelector('.saveItems').classList.remove('hidden');
-        document.querySelector('.navbar').classList.remove('noshadow');
-        gameFrame.src = '';
+      gameNav.querySelector("#back").addEventListener("click", (e) => {
+        gamesContainer.classList.remove("hidden");
+        searchBar.classList.remove("hidden");
+        gameContainer.classList.add("hidden");
+        document.querySelector(".saveItems").classList.remove("hidden");
+        document.querySelector(".navbar").classList.remove("noshadow");
+        gameFrame.src = "";
       });
 
       // Add click event listener to the fullscreen button in the game container to enter fullscreen mode
-      gameNav.querySelector('#fullscreen').addEventListener('click', (e) => {
+      gameNav.querySelector("#fullscreen").addEventListener("click", (e) => {
         if (!document.fullscreenElement) {
           gameFrame.requestFullscreen();
         }
@@ -86,19 +93,19 @@ fetch('./assets/json/games.json')
     });
   })
   .catch((e) => {
-    alert('Could not load games');
+    alert("Could not load games");
     alert(e);
   });
 
 // Hide the spinner element after the page is loaded
-document.querySelector('.spinner').style.display = 'none';
+document.querySelector(".spinner").style.display = "none";
 
 // Function to get the main save data
 function getMainSave() {
   var mainSave = {};
 
   // List of items in localStorage that should not be saved
-  var localStorageDontSave = ['theme', 'tab', 'nebelung'];
+  var localStorageDontSave = ["theme", "tab", "nebelung"];
 
   // Convert localStorage to an array of key-value pairs and remove the items that should not be saved
   let localStorageSave = Object.entries(localStorage);
@@ -124,7 +131,7 @@ function getMainSave() {
   mainSave = btoa(JSON.stringify(mainSave));
 
   // Encrypt the mainSave data using AES encryption with the key 'save'
-  mainSave = CryptoJS.AES.encrypt(mainSave, 'save').toString();
+  mainSave = CryptoJS.AES.encrypt(mainSave, "save").toString();
 
   // Return the encrypted mainSave data
   return mainSave;
@@ -135,9 +142,9 @@ function downloadMainSave() {
   var data = new Blob([getMainSave()]);
   var dataURL = URL.createObjectURL(data);
 
-  var fakeElement = document.createElement('a');
+  var fakeElement = document.createElement("a");
   fakeElement.href = dataURL;
-  fakeElement.download = 'games.save';
+  fakeElement.download = "games.save";
   fakeElement.click();
   URL.revokeObjectURL(dataURL);
 }
@@ -145,7 +152,7 @@ function downloadMainSave() {
 // Function to get the main save data from an uploaded file
 function getMainSaveFromUpload(data) {
   // Decrypt the uploaded data using AES decryption with the key 'save'
-  data = CryptoJS.AES.decrypt(data, 'save').toString(CryptoJS.enc.Utf8);
+  data = CryptoJS.AES.decrypt(data, "save").toString(CryptoJS.enc.Utf8);
 
   // Parse the decrypted data as JSON
   var mainSave = JSON.parse(atob(data));
@@ -163,11 +170,11 @@ function getMainSaveFromUpload(data) {
 
 // Function to handle the file upload
 function uploadMainSave() {
-  var hiddenUpload = document.querySelector('.hiddenUpload');
+  var hiddenUpload = document.querySelector(".hiddenUpload");
   hiddenUpload.click();
 
   // Listen for the change event on the file input element
-  hiddenUpload.addEventListener('change', function (e) {
+  hiddenUpload.addEventListener("change", function (e) {
     var files = e.target.files;
     var file = files[0];
     if (!file) {
@@ -181,11 +188,11 @@ function uploadMainSave() {
       getMainSaveFromUpload(e.target.result);
 
       // Show a success message to the user
-      var uploadResult = document.querySelector('.uploadResult');
-      uploadResult.innerText = 'Uploaded save!';
-      uploadResult.style.display = 'initial';
+      var uploadResult = document.querySelector(".uploadResult");
+      uploadResult.innerText = "Uploaded save!";
+      uploadResult.style.display = "initial";
       setTimeout(function () {
-        uploadResult.style.display = 'none';
+        uploadResult.style.display = "none";
       }, 3000);
     };
 
@@ -194,10 +201,10 @@ function uploadMainSave() {
 }
 
 // Handle the hii pattern when keys are pressed
-var hiiPattern = ['h', 'i', 'i'];
+var hiiPattern = ["h", "i", "i"];
 var hiiCurrent = 0;
 
-document.addEventListener('keydown', function (e) {
+document.addEventListener("keydown", function (e) {
   if (e.key !== hiiPattern[hiiCurrent]) {
     return (hiiCurrent = 0);
   }
@@ -206,6 +213,6 @@ document.addEventListener('keydown', function (e) {
 
   if (hiiPattern.length == hiiCurrent) {
     hiiCurrent = 0;
-    document.querySelector('.hii').removeAttribute('hidden');
+    document.querySelector(".hii").removeAttribute("hidden");
   }
 });

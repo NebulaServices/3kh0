@@ -7,11 +7,11 @@ body[theme="default"] {
   --text-secondary: black;
 }
 body[theme="axel"] {
-        --background: #4b146d;
-        --theme: #f1a6c9;
-        --text: #7d5624;
-        --text-secondary: #af73b2;
-      }
+  --background: #4b146d;
+  --theme: #f1a6c9;
+  --text: #7d5624;
+  --text-secondary: #af73b2;
+}
 body[theme="fuckyouandrewosborne"] {
   --background: #fffff;
   --theme: brown;
@@ -19,7 +19,7 @@ body[theme="fuckyouandrewosborne"] {
   --text-secondary: black;
 }
 body[theme="if_you_are_reading_this_are_you_skidding_or_just_looking_at_code"] {
---background: #1448f5;
+  --background: #1448f5;
   --theme: #6c06ba;
   --text: #14f5f5;
   --text-secondary: white;
@@ -65,13 +65,13 @@ body[theme="40yearoldpedophileanddiscordmod"] {
   --background: #321414;
   --theme: #f4a460;
   --text: #f4a460;
-  --text-secondary: #B58B00;
+  --text-secondary: #b58b00;
 }
 body[theme="airtagschicken"] {
   --background: #00ff00;
   --theme: #00ff80;
-  --text: #FA11F2;
-  --text-secondary: #FA11F2;
+  --text: #fa11f2;
+  --text-secondary: #fa11f2;
 }
 body[theme="amoled"] {
   --background: #000000;
@@ -86,10 +86,10 @@ body[theme="communism"] {
   --text-secondary: #ffff00;
 }
 body[theme="homestuck"] {
-    --background: #dfdfdf;
-    --theme: #0ad53e;
-    --text: black;
-    --text-secondary: white;
+  --background: #dfdfdf;
+  --theme: #0ad53e;
+  --text: black;
+  --text-secondary: white;
 }
 body[theme="orchid"] {
   --background: #1c1c1c;
