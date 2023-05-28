@@ -53,7 +53,7 @@ fetch('./assets/json/games.json')
     games.forEach((game) => {
       const gameEl = document.createElement('div');
       gameEl.className = 'game';
-      gameEl.innerHTML = `<img src="${cdn + "/" + game.root + "/" + game.img}" onerror="this.src='./assets/globe.svg'"/><span>${game.name}</span>`;
+      gameEl.innerHTML = `<img src="${cdn + game.root + "/" + game.img}"/><span>${game.name}</span>`;
       gamesContainer.appendChild(gameEl);
 
       // Add click event listener to the game element to show the game in the game container
@@ -101,7 +101,7 @@ function getMainSave() {
   var localStorageDontSave = ['theme', 'tab', 'nebelung'];
 
   // Convert localStorage to an array of key-value pairs and remove the items that should not be saved
-  localStorageSave = Object.entries(localStorage);
+  let localStorageSave = Object.entries(localStorage);
 
   for (let entry in localStorageSave) {
     if (localStorageDontSave.includes(localStorageSave[entry][0])) {

@@ -116,7 +116,7 @@
             document.title = `Play ${game.name} | 3kh0`;
             window.history.pushState({}, "", `${origin}games/${gameSubpath}`);
             document.querySelector("#game").textContent = game.name;
-            document.querySelector(".loader").innerHTML = `<img src="${cdn + "/" + game.root + "/" + game.img}" class="game_img" onerror="this.src='./globe.svg'"/>`;
+            document.querySelector(".loader").innerHTML = `<img src="${cdn + "/" + game.root + "/" + game.img}" class="game_img" onerror="this.src='/assets/globe.svg'"/>`;
             document.querySelector("#startgame").classList.remove("hidden");
 
             document.querySelector("#startgame").addEventListener("click", (e) => {
