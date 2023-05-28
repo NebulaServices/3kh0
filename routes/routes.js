@@ -7,7 +7,7 @@ const routes = [
     { path: "/credits", file: "credits.html" },
     { path: "/404", file: "404.html" },
     { path: "/projects", file: "projects.html" },
-    { path: "/assets/game", file: "assets/game.html" }
+    { path: "/assets/game", file: "src/assets/game.html" }
   ]
 
 export default routes;
