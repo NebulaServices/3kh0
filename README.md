@@ -3,7 +3,7 @@
 <img style="border-radius:50%" height="150px" src="https://raw.githubusercontent.com/NebulaServices/3kh0/main/public/src/images/logo.png">
 </kbd>
 </p>
-<h1 align="center">3kh0</h1>
+<h1 align="center">3kh0 Reborn</h1>
 <p align="center">The better unblocked games website.</p>
 
 > 3kh0 is now maintained by [NebulaServices](https://github.com/NebulaServices)
@@ -18,6 +18,9 @@ Join the discord for more info:
 
 
 [![Join us on Discord](https://invidget.switchblade.xyz/wv6huJAwEv?theme=light)](https://discord.io/3kh0_)
+=======
+> **Note**
+> **If you do fork this repo, please give the orginal repo a star! It helps out alot and only 30% of people who fork give me a star.**
 
 ## Features
 
@@ -54,19 +57,6 @@ Thank you to all of these amazing people for helping work on this project!
 [![Contrib](https://contrib.rocks/image?repo=NebulaServices/3kh0#)](https://github.com/NebulaServices/3kh0/graphs/contributors)
 > There are more contributors but they are listed on the website
 
-And the people who worked on v3!
-
-[![Contrib](https://contrib.rocks/image?repo=3kh0/website-v3#)](https://github.com/3kh0/website-v3/graphs/contributors)
-
-And the people who worked on v2!
-
-[![Contrib](https://contrib.rocks/image?repo=3kh0/website-v2#)](https://github.com/3kh0/website-v2/graphs/contributors)
-> There are more contributors then the ones shown.
-
-And the people who worked on v1!
-
-[![Contrib](https://contrib.rocks/image?repo=3kh0/website-v1#)](https://github.com/3kh0/website-v1/graphs/contributors)
-
 ## Contributing
 
 Contributions are always welcome!
@@ -74,6 +64,7 @@ Contributions are always welcome!
 Please adhere to this project's [Code of Conduct](https://github.com/3kh0/3kh0-v4/blob/main/.github/CODE_OF_CONDUCT.md).
 
 If you would like to help add games, you can do that here: [3kh0/3kh0-Assets](https://github.com/3kh0/3kh0-Assets), this repo only has the UI and other things
+
 
 ## Run Locally
 
@@ -100,6 +91,11 @@ npm start
 
 ## License
 View the full license [here](https://github.com/NebulaServices/3kh0/blob/main/LICENSE)
+=======
+
+
+> **Warning**
+> Cloning a repository with Git removes everything in the folder you do it in. If you're not careful, you can delete your hard drive, so please do not do this unless you know what you're doing.
 
 ## Previous versions
 

@@ -33,8 +33,11 @@ function checkCookie(key) {
 }
 
 var key = "myKey"; // set the key to check for
-if (!checkCookie(key)) { // if the key does not exist in the cookie
-  alert("Hello! This website is free to use but it costs alot money to maintain with the servers for games which is really expensive, so if you have ad blocker it would be nice of you to turn it off so we can keep the site running! Thank you for supporting us! <3"); // display an alert message
+if (!checkCookie(key)) {
+  // if the key does not exist in the cookie
+  alert(
+    "Hello! This website is free to use but it costs alot money to maintain with the servers for games which is really expensive, so if you have ad blocker it would be nice of you to turn it off so we can keep the site running! Thank you for supporting us! <3"
+  ); // display an alert message
   var expirationDate = new Date(); // create a new date object
   expirationDate.setFullYear(expirationDate.getFullYear() + 1); // set the expiration date to one year from now
   document.cookie = key + "=true; expires=" + expirationDate.toUTCString(); // create the cookie with the key and expiration date
@@ -45,9 +48,9 @@ var crate;
 // Checks if a CDN is blocked by testing the README.md file
 async function isBlocked(url) {
   try {
-    var README = await fetch(url + '/README.md');
+    var README = await fetch(url + "/README.md");
     var content = await README.text();
-    if (content.startsWith('# 3kh0 Assets')) {
+    if (content.startsWith("# 3kh0 Assets")) {
       // The CDN is not blocked
       return false;
     } else {
@@ -71,49 +74,47 @@ async function getCDN(cdns) {
 
 // Define some varibles for later
 const path = location.pathname;
-const origin = localStorage.getItem('instance');
-const cdn = localStorage.getItem('cdn');
+const origin = localStorage.getItem("instance");
+const cdn = localStorage.getItem("cdn");
 const queryString = window.location.search;
-window.history.pushState({}, '', path);
+window.history.pushState({}, "", path);
 const urlParams = new URLSearchParams(queryString);
-const onLoadData = urlParams.get('onload');
+const onLoadData = urlParams.get("onload");
 
-const base = document.createElement('base');
-base.href = location.origin + path.replace(path.split('\\').pop().split('/').pop(), '');
+const base = document.createElement("base");
+base.href =
+  location.origin + path.replace(path.split("\\").pop().split("/").pop(), "");
 document.head.appendChild(base);
 
 // If we do not have the origin var, we make it
 if (!origin) {
-  localStorage.setItem('instance', base.href);
+  localStorage.setItem("instance", base.href);
   location.reload();
 }
 
 // If we do not have the cdn var, we make it
 if (!cdn) {
-  fetch('./assets/json/cdns.json')
+  fetch("./assets/json/cdns.json")
     .then((res) => res.json())
     .then(async (cdns) => {
-      localStorage.setItem('cdn', await getCDN(cdns));
+      localStorage.setItem("cdn", await getCDN(cdns));
       location.reload();
     });
 }
 
-const instance = encodeURIComponent(origin.replace(location.origin, ''));
+const instance = encodeURIComponent(origin.replace(location.origin, ""));
 
 // If we have onLoadData, we run it now
 
-
- 
-
 // If we have any errors, we will log it
-window.addEventListener('error', (e) => {
+window.addEventListener("error", (e) => {
   console.error(e);
 });
 
 // Add the main script in the <head> tags
 
 // Collect Tab Cloak data from local storage
-var tab = localStorage.getItem('tab');
+var tab = localStorage.getItem("tab");
 if (tab) {
   try {
     // Parse the data, it is in JSON
@@ -137,102 +138,102 @@ if (tabData.icon) {
 
 // Set theme colors if the user has set it
 function getContrastHex(hexcolor) {
-  hexcolor = hexcolor.replace('#', '');
+  hexcolor = hexcolor.replace("#", "");
   var r = parseInt(hexcolor.substr(0, 2), 16);
   var g = parseInt(hexcolor.substr(2, 2), 16);
   var b = parseInt(hexcolor.substr(4, 2), 16);
   var yiq = (r * 299 + g * 587 + b * 114) / 1000;
-  return yiq >= 128 ? '#1c1c1c' : 'white';
+  return yiq >= 128 ? "#1c1c1c" : "white";
 }
 
 // Set theme colors if the user has set it
 function getColorHex(hexcolor) {
-  hexcolor = hexcolor.replace('#', '');
+  hexcolor = hexcolor.replace("#", "");
   var r = parseInt(hexcolor.substr(0, 2), 16);
   var g = parseInt(hexcolor.substr(2, 2), 16);
   var b = parseInt(hexcolor.substr(4, 2), 16);
   var yiq = (r * 299 + g * 587 + b * 114) / 1000;
-  return yiq >= 128 ? 'white' : 'black';
+  return yiq >= 128 ? "white" : "black";
 }
 
 // Set theme colors if the user has set it
-var theme = localStorage.getItem('theme') || 'default';
+var theme = localStorage.getItem("theme") || "default";
 let themes;
 
 // Fetching themes
-fetch(origin + 'assets/json/themes.json')
+fetch(origin + "assets/json/themes.json")
   .then((res) => res.json())
   .then((data_themes) => {
     themes = data_themes;
 
-    if (theme !== 'custom') {
-      document.body.setAttribute('theme', theme);
+    if (theme !== "custom") {
+      document.body.setAttribute("theme", theme);
 
-      if (location.pathname.includes('/settings')) {
+      if (location.pathname.includes("/settings")) {
         themes.forEach((palette) => {
           if (palette.theme == theme) {
             console.log(palette.theme);
-            document.querySelector('#theme_color').value = palette.color;
+            document.querySelector("#theme_color").value = palette.color;
           }
         });
       }
     } else {
       // Get custom theme
-      const theme = localStorage.getItem('theme_color');
+      const theme = localStorage.getItem("theme_color");
 
-      document.body.setAttribute('theme', 'custom');
-      document.body.style = `--theme: ${theme}; --background: ${getContrastHex(theme)}; --text: ${getColorHex(theme)}; --text-secondary: ${getColorHex(theme)};`;
+      document.body.setAttribute("theme", "custom");
+      document.body.style = `--theme: ${theme}; --background: ${getContrastHex(
+        theme
+      )}; --text: ${getColorHex(theme)}; --text-secondary: ${getColorHex(
+        theme
+      )};`;
 
-      if (location.pathname.includes('/settings')) {
+      if (location.pathname.includes("/settings")) {
         // Make the custom theme color selector
-        document.querySelector('#theme_color').value = theme;
+        document.querySelector("#theme_color").value = theme;
       }
     }
   })
   .catch((e) => {
     // Houston, we have a problem.
     console.error(e);
-    throw new Error('Failed to load themes');
+    throw new Error("Failed to load themes");
   });
 
 // Add the changelogAdded element for the changelog
 
-
-
-
 // Parrot theme random colors
 function setParrotColors() {
-  var parrotColor = "rgb(195, 158, 31)"
-  var parrotColors = ["#ff4c4b", "#c39e1f", "#b42e63"]
+  var parrotColor = "rgb(195, 158, 31)";
+  var parrotColors = ["#ff4c4b", "#c39e1f", "#b42e63"];
 
   document.querySelectorAll("*").forEach((item) => {
     if (getComputedStyle(item).color == parrotColor) {
-        item.style.color = parrotColors[Math.floor((Math.random()*parrotColors.length))]
+      item.style.color =
+        parrotColors[Math.floor(Math.random() * parrotColors.length)];
     }
-  })
+  });
 }
 
 if (localStorage.getItem("theme") == "parrot") {
-    setParrotColors()
+  setParrotColors();
 }
 
 // Handle secret themes
 function foundSecretTheme(name) {
-  document.body.setAttribute('theme', name);
-  localStorage.setItem('theme', name);
-  localStorage.setItem(name, 'true');
-  if (document.querySelector('.' + name)) {
-    document.querySelector('.' + name).removeAttribute('hidden');
+  document.body.setAttribute("theme", name);
+  localStorage.setItem("theme", name);
+  localStorage.setItem(name, "true");
+  if (document.querySelector("." + name)) {
+    document.querySelector("." + name).removeAttribute("hidden");
   }
 }
 
 // Handle the secret theme button
 function secretThemeButton(name) {
-  if (localStorage.getItem(name) == 'true') {
-    if (document.querySelector('.' + name)) {
-      document.querySelector('.' + name).removeAttribute('hidden');
+  if (localStorage.getItem(name) == "true") {
+    if (document.querySelector("." + name)) {
+      document.querySelector("." + name).removeAttribute("hidden");
     }
   }
 }
-
-

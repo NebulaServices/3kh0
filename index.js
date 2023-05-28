@@ -3,14 +3,13 @@ import express from "express";
 import { fileURLToPath } from "url";
 import path, { dirname } from "path";
 import cors from "cors";
-import routes from "./routes/routes.js"
+import routes from "./routes/routes.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const port = 6003;
 const app = express();
-
 
 routes.forEach((route) => {
   const handlers = [
@@ -22,7 +21,7 @@ routes.forEach((route) => {
   app.get(route.path, handlers);
 });
 
-app.use(express.static(path.join(__dirname, 'public', 'src')));
+app.use(express.static(path.join(__dirname, "public", "src")));
 
 const server = http.createServer(app);
 server.listen(port, () => {
