@@ -20,12 +20,12 @@
             document.title = `Play ${name} | 3kh0`;
             window.history.pushState({}, "", `${origin}games/${gameSubpath}`);
             document.querySelector("#game").textContent = name;
-            document.querySelector(".loader").innerHTML = `<img src="${cdn}/${root}/${img}" class="game_img" onerror="this.src='/assets/globe.svg'"/>`;
+            document.querySelector(".loader").innerHTML = `<img src="${cdn}${root}/${img}" class="game_img" loading="lazy" onerror="this.src='/assets/globe.svg'"/>`;
             document.querySelector("#startgame").classList.remove("hidden");
   
             const startGameHandler = (e) => {
               document.body.innerHTML = `
-                <iframe frameborder="0" src="${cdn}/${root}/${file}" onerror="document.write('Could not load game');console.error('The game encountered an error.');" onload="document.querySelector('.overlay').remove();"></iframe>
+                <iframe frameborder="0" src="${cdn}${root}/${file}" onerror="document.write('Could not load game');console.error('The game encountered an error.');" onload="document.querySelector('.overlay').remove();"></iframe>
                 <div class="overlay">
                   <div class="loader center">
                     <span class="spinner">

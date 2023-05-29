@@ -3,36 +3,42 @@
 body[theme="default"] {
   --background: #1c1c1c;
   --theme: #4caf50;
+  --theme-hover: #3f9142;
   --text: white;
   --text-secondary: black;
 }
 body[theme="axel"] {
   --background: #4b146d;
   --theme: #f1a6c9;
+  --theme-hover: #ca8ca9;
   --text: #7d5624;
   --text-secondary: #af73b2;
 }
 body[theme="fuckyouandrewosborne"] {
   --background: #fffff;
   --theme: brown;
+  --theme-hover: rgb(138, 34, 34);
   --text: black;
   --text-secondary: black;
 }
 body[theme="if_you_are_reading_this_are_you_skidding_or_just_looking_at_code"] {
   --background: #1448f5;
   --theme: #6c06ba;
+  --theme-hover: #5b039e;
   --text: #14f5f5;
   --text-secondary: white;
 }
 body[theme="poop"] {
   --background: black;
   --theme: brown;
+  --theme-hover: rgb(136, 34, 34);
   --text: white;
   --text-secondary: white;
 }
 body[theme="fuckyoufeny"] {
   --background: blue;
   --theme: yellow;
+  --theme-hover: rgb(204, 204, 3);
   --text: green;
   --text-secondary: green;
 }
@@ -40,60 +46,70 @@ body[theme="fuckyoufeny"] {
 body[theme="light"] {
   --background: white;
   --theme: #4caf50;
+  --theme-hover: #3f9142;
   --text: black;
   --text-secondary: black;
 }
 body[theme="pink"] {
   --background: #ff1dce;
   --theme: #ff33ff;
+  --theme-hover: #d62ad6;
   --text: #39ff14;
   --text-secondary: #39ff14;
 }
 body[theme="blue"] {
   --background: #062a78;
   --theme: #062a78;
+  --theme-hover: #051d50;
   --text: #b0c4de;
   --text-secondary: #b0c4de;
 }
 body[theme="yellow"] {
   --background: #ffff00;
   --theme: #ffff00;
+  --theme-hover: rgb(204, 204, 3);
   --text: #002147;
   --text-secondary: #002147;
 }
 body[theme="40yearoldpedophileanddiscordmod"] {
   --background: #321414;
   --theme: #f4a460;
+  --theme-hover: #cc894f;
   --text: #f4a460;
   --text-secondary: #b58b00;
 }
 body[theme="airtagschicken"] {
   --background: #00ff00;
   --theme: #00ff80;
+  --theme-hover: #00c563;
   --text: #fa11f2;
   --text-secondary: #fa11f2;
 }
 body[theme="amoled"] {
   --background: #000000;
   --theme: #000000;
+  --theme-hover: #1b1b1b;
   --text: #ffffff;
   --text-secondary: #ffffff;
 }
 body[theme="communism"] {
   --background: ##ff0000;
   --theme: #ff1f1f;
+  --theme-hover: #d62a2a;
   --text: #ffff00;
   --text-secondary: #ffff00;
 }
 body[theme="homestuck"] {
   --background: #dfdfdf;
   --theme: #0ad53e;
+  --theme-hover: #07b332;
   --text: black;
   --text-secondary: white;
 }
 body[theme="orchid"] {
   --background: #1c1c1c;
   --theme: #b625cc;
+  --theme-hover: #a31eb8;
   --text: white;
   --text-secondary: white;
 }
@@ -101,6 +117,7 @@ body[theme="orchid"] {
 body[theme="sky"] {
   --background: #1c1c1c;
   --theme: #0084ff;
+  --theme-hover: #0072d1;
   --text: white;
   --text-secondary: black;
 }
@@ -108,6 +125,7 @@ body[theme="sky"] {
 body[theme="winter"] {
   --background: linear-gradient(to right, #2377a4, #79c0d7), #79c0d7;
   --theme: #3da341;
+  --theme-hover: #2d7a2d;
   --text: white;
   --text-secondary: white;
 }
@@ -121,6 +139,7 @@ body[theme="nebelung"] {
   --text: black;
   --text-secondary: white;
   --theme: linear-gradient(to right, #3d2d1e, #190f05);
+  --theme-hover: linear-gradient(to right, #221911, #110a03);
 }
 
 body[theme="nebelung"] .navbar {
@@ -131,6 +150,7 @@ body[theme="nebelung"] .navbar {
 body[theme="piplup"] {
   --background: #5bacee;
   --theme: #0026ff;
+  --theme-hover: #0019d4;
   --text: white;
   --text-secondary: black;
 }
@@ -174,6 +194,7 @@ body[theme="piplup"] {
 body[theme="forternish"] {
   --background: #003443;
   --theme: linear-gradient(15deg, #82c4e4, #60f108);
+  --theme-hover: linear-gradient(15deg, #6ca3be, #52cc06);
   --text: white;
   --text-secondary: black;
 }
@@ -185,6 +206,7 @@ body[theme="forternish"] * {
 body[theme="northernfish"] {
   --background: linear-gradient(to bottom right, #91fa9e, #0ec9f8);
   --theme: #3778ff;
+  --theme-hover: #2e64d8;
   --text: black;
   --text-secondary: black;
 }
@@ -204,6 +226,7 @@ body[theme="northernfish"]::-webkit-scrollbar {
 body[theme="forgor"] {
   --background: #efefef;
   --theme: #d7d700;
+  --theme-hover: #b5b500;
   --text: #d7d700;
   --text-secondary: #efefef;
 }
@@ -211,6 +234,7 @@ body[theme="forgor"] {
 body[theme="monotonium"] {
   --background: white;
   --theme: black;
+  --theme-hover: #2c2c2c;
   --text: black;
   --text-secondary: white;
 }
@@ -218,6 +242,7 @@ body[theme="monotonium"] {
 body[theme="monotonium-dark"] {
   --background: black;
   --theme: white;
+  --theme-hover: #b1b1b1;
   --text: white;
   --text-secondary: black;
 }
@@ -225,6 +250,7 @@ body[theme="monotonium-dark"] {
 body[theme="concrete"] {
   --background: gray;
   --theme: white;
+  --theme-hover: #b1b1b1;
   --text: white;
   --text-secondary: grey;
 }
@@ -232,6 +258,7 @@ body[theme="concrete"] {
 body[theme="sunset"] {
   --background: #1c1c1c;
   --theme: #e83141;
+  --theme-hover: #c41e2d;
   --text: white;
   --text-secondary: black;
 }
@@ -239,6 +266,7 @@ body[theme="sunset"] {
 body[theme="russell2259"] {
   --background: rgba(17, 17, 17, 0.777);
   --theme: #0473fb;
+  --theme-hover: #0059d1;
   --text: #fff;
   --text-secondary: black;
 }
@@ -251,6 +279,7 @@ body {
 body[theme="fracital"] {
   --background: #222;
   --theme: #f971e4;
+  --theme-hover: #e84fc4;
   --text: white;
   --text-secondary: black;
 }
@@ -258,6 +287,7 @@ body[theme="fracital"] {
 body[theme="hacker"] {
   --background: black;
   --theme: #72dc83;
+  --theme-hover: #5cbf6b;
   --text: white;
   --text-secondary: black;
 }
@@ -269,6 +299,7 @@ body[theme="hacker"] * {
 body[theme="parrot"] {
   --background: #1a1404;
   --theme: #0580c3;
+  --theme-hover: #0469a0;
   --text: #c39e1f;
   --text-secondary: #000000;
 }
