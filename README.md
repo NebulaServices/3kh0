@@ -33,7 +33,7 @@ Due to the amount of games, all of the games have been moved to a [new repo](htt
 
 Thank you to all of these amazing people for helping work on this project!
 [![Contrib](https://contrib.rocks/image?repo=3kh0/website-v4#)](https://github.com/3kh0/website-v4/graphs/contributors)
-> There are more contributors but they are listed on the website
+> There are more contributors but they are listed on the website!
 
 ## Contributing
 
