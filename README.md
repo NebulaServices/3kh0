@@ -33,7 +33,7 @@ Due to the amount of games, all of the games have been moved to a [new repo](htt
 
 Thank you to all of these amazing people for helping work on this project!
 [![Contrib](https://contrib.rocks/image?repo=3kh0/website-v4#)](https://github.com/3kh0/website-v4/graphs/contributors)
-> There are more contributors but they are listed on the website
+
 
 ## Contributing
 
@@ -43,21 +43,9 @@ See [`contributing.md`](https://github.com/3kh0/3kh0-v4/blob/main/CONTRIBUTING.m
 
 Please adhere to this project's [Code of Conduct](https://github.com/3kh0/3kh0-v4/blob/main/.github/CODE_OF_CONDUCT.md).
 
-If you would like to help add games, you can do that here: [3kh0/3kh0-Assets](https://github.com/3kh0/3kh0-Assets), this repo only has the UI and other things
 
-
-
-> **Warning**
-> Cloning a repository with Git removes everything in the folder you do it in. If you're not careful, you can delete your hard drive, so please do not do this unless you know what you're doing.
 
 ## License
 GPLv3 
 
-## Previous versions
 
-Here are some of the previous versions of this project. To give you a
-sense, this is v4
-
-- [Website v1](https://github.com/3kh0/website-v1)
-- [Website v2](https://github.com/3kh0/website-v2)
-- [Website v3](https://github.com/3kh0/website-v3)
