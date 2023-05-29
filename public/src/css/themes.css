@@ -303,3 +303,26 @@ body[theme="parrot"] {
   --text: #c39e1f;
   --text-secondary: #000000;
 }
+
+body[theme="premiumdark"] {
+  --background: #111827;
+  --theme: #4b5563;
+  --text: white;
+  --text-secondary: white;
+}
+
+body[theme="premiumdark"] > .navbar {
+  box-shadow: none;
+  animation: none;
+  padding: 6px;
+  /*border-bottom: solid 1px #374151;*/
+}
+
+body[theme="premiumdark"] > .navbar > .navitems {
+  background: #1f2937;
+  border-radius: 22px;
+}
+
+body[theme="premiumdark"] > .navbar > .navitems > .navlogo {
+  left: 13px;
+}
