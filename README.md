@@ -24,6 +24,13 @@
 > **Note**
 > If you have any problems please open an issue, so we can fix it ASAP!
 
+## Deploy (using docker)
+it's very simple to deploy 3kh0 using docker you have to simpely run:
+
+```docker run -d --restart unless-stopped -p 6003:6003 ghcr.io/NebulaServices/3kh0:main```
+
+after executing this you should be able to access 3kh0 via localhost:6003!
+
 ## Game Files
 Due to the amount of games, all of the games have been moved to a [new repo](https://github.com/3kh0/3kh0-Assets).
 
