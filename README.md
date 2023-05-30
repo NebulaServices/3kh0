@@ -24,10 +24,13 @@
 > **Note**
 > If you have any problems please open an issue, so we can fix it ASAP!
 
+## Use
+if you want links go to the [INSTANCES](https://github.com/NebulaServices/3kh0/blob/main/INSTANCES.md) page.
+
 ## Deploy (using docker)
 it's very simple to deploy 3kh0 using docker you have to simpely run:
 
-```docker run -d --restart unless-stopped -p 6003:6003 ghcr.io/NebulaServices/3kh0:main```
+```docker run -d --restart unless-stopped -p 6003:6003 ghcr.io/nebulaservices/3kh0:main```
 
 after executing this you should be able to access 3kh0 via localhost:6003!
 
@@ -39,16 +42,16 @@ Due to the amount of games, all of the games have been moved to a [new repo](htt
 ## Contributors
 
 Thank you to all of these amazing people for helping work on this project!
-[![Contrib](https://contrib.rocks/image?repo=3kh0/website-v4#)](https://github.com/3kh0/website-v4/graphs/contributors)
+[![Contrib](https://contrib.rocks/image?repo=NebulaServices/3kh0#)](https://github.com/NebulaServices/3kh0/graphs/contributors)
 
 
 ## Contributing
 
 Contributions are always welcome!
 
-See [`contributing.md`](https://github.com/3kh0/3kh0-v4/blob/main/CONTRIBUTING.md) for ways to get started.
+See [`contributing.md`](https://github.com/NebulaServices/3kh0/blob/main/CONTRIBUTING.md) for ways to get started.
 
-Please adhere to this project's [Code of Conduct](https://github.com/3kh0/3kh0-v4/blob/main/.github/CODE_OF_CONDUCT.md).
+Please adhere to this project's [Code of Conduct](https://github.com/NebulaServices/3kh0/blob/main/.github/CODE_OF_CONDUCT.md).
 
 
 
