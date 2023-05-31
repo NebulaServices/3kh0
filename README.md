@@ -24,9 +24,6 @@
 > **Note**
 > If you have any problems please open an issue, so we can fix it ASAP!
 
-## Use
-if you want links go to the [INSTANCES](https://github.com/NebulaServices/3kh0/blob/main/INSTANCES.md) page.
-
 ## Deploy (using docker)
 it's very simple to deploy 3kh0 using docker you have to simpely run:
 
