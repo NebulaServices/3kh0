@@ -8,7 +8,7 @@
 <p align="center">The better unblocked games website.</p>
 
 > **Note**
-> **If you do fork this repo, please give the orginal repo a star! It helps out alot and only 30% of people who fork give me a star.**
+> **If you do fork this repo, please give the [`original`](https://github.com/NebulaServices/3kh0) repo a star! It helps out alot and only 30% of people who fork give me a star.**
 
 
 ## Features
@@ -31,7 +31,12 @@ it's very simple to deploy 3kh0 using docker you have to simpely run:
 
 after executing this you should be able to access 3kh0 via localhost:6003!
 
+## Deploy using Third-Party Services.
+[![Deploy to Cyclic](https://deploy.cyclic.sh/button.svg)](https://deploy.cyclic.sh/)
+
 ## Game Files
+> **Due to the shutdown of the original 3kh0 project, the games repo is now read-only.**
+
 Due to the amount of games, all of the games have been moved to a [new repo](https://github.com/3kh0/3kh0-Assets).
 
 
@@ -39,20 +44,19 @@ Due to the amount of games, all of the games have been moved to a [new repo](htt
 ## Contributors
 
 Thank you to all of these amazing people for helping work on this project!
-[![Contrib](https://contrib.rocks/image?repo=3kh0/website-v4#)](https://github.com/3kh0/website-v4/graphs/contributors)
+[![Contrib](https://contrib.rocks/image?repo=NebulaServices/3kh0#)](https://github.com/NebulaServices/3kh0/graphs/contributors)
 
 
 ## Contributing
 
 Contributions are always welcome!
 
-See [`contributing.md`](https://github.com/3kh0/3kh0-v4/blob/main/CONTRIBUTING.md) for ways to get started.
+See [`[DELETED]`](https://github.com/3kh0/3kh0-v4/blob/main/CONTRIBUTING.md) for ways to get started.
 
-Please adhere to this project's [Code of Conduct](https://github.com/3kh0/3kh0-v4/blob/main/.github/CODE_OF_CONDUCT.md).
+Please adhere to this project's [Code of Conduct](https://github.com/NebulaServices/3kh0/blob/main/.github/CODE_OF_CONDUCT.md).
 
 
 
 ## License
 GPLv3 
-
 
