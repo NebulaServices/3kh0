@@ -31,6 +31,9 @@ it's very simple to deploy 3kh0 using docker you have to simpely run:
 
 after executing this you should be able to access 3kh0 via localhost:6003!
 
+## Deploy using Third-Party Services.
+[![Deploy to Cyclic](https://deploy.cyclic.sh/button.svg)](https://deploy.cyclic.sh/)
+
 ## Game Files
 Due to the amount of games, all of the games have been moved to a [new repo](https://github.com/3kh0/3kh0-Assets).
 
