@@ -1,125 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="The better unblocked games website." />
-    <meta
-      name="keywords"
-      content="front-end web developer, unblocked, games, google sites, unblocked games mom, ublocked, code, coding, programmer, development, javascript, jquery, bootstrap, sass, less, git"
-    />
-    <meta name="author" content="3kh0" />
-    <meta content="3kh0" property="og:title" />
-    <meta
-      content="The better unblocked games website."
-      property="og:description"
-    />
-    <meta content="/images/logo.png" property="og:image" />
-    <title>Error | 3kh0</title>
-    <link href="/images/logo.png" rel="icon" />
-    <link href="/css/index.css" rel="stylesheet" />
-    <!-- <script
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The better unblocked games website." />
+  <meta name="keywords"
+    content="front-end web developer, unblocked, games, google sites, unblocked games mom, ublocked, code, coding, programmer, development, javascript, jquery, bootstrap, sass, less, git" />
+  <meta name="author" content="3kh0" />
+  <meta content="3kh0" property="og:title" />
+  <meta content="The better unblocked games website." property="og:description" />
+  <meta content="/images/logo.png" property="og:image" />
+  <title>Error | 3kh0</title>
+  <link href="/images/logo.png" rel="icon" />
+  <link href="/css/index.css" rel="stylesheet" />
+  <!-- <script
       src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3"
       async
       defer
     ></script> -->
-  </head>
-  <body>
-    <div class="navbar">
-      <div class="navitems">
-        <img
-          onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'"
-          src="/images/logo.png"
-          class="navlogo"
-          draggable="false"
-        />
-        <a href="/"><div class="navitem">Home</div></a>
-        <a href="/projects"><div class="navitem">Games</div></a>
-        <a href="/extras"><div class="navitem">Extras</div></a>
-        <a href="/blog"><div class="navitem">Blog</div></a>
-        <a href="/settings"><div class="navitem">Settings</div></a>
-        <a href="/about"><div class="navitem">About</div></a>
-      </div>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navitems">
+      <img onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'" src="/images/logo.png" class="navlogo"
+        draggable="false" />
+      <a href="/">
+        <div class="navitem">Home</div>
+      </a>
+      <a href="/projects">
+        <div class="navitem">Games</div>
+      </a>
+      <a href="/settings">
+        <div class="navitem">Settings</div>
+      </a>
+      <a href="/about">
+        <div class="navitem">About</div>
+      </a>
     </div>
+  </div>
 
-    <div class="title">404 Error</div>
-    <div class="message">This page does not exist!</div>
-    <center>
-      <button class="button" onclick="statsForNerds()">Stats for nerds</button>
-    </center>
+  <div class="title">404 Error</div>
+  <div class="message">This page does not exist! <br><br><small>If you think we made a mistake, let us know on our
+    <a href="https://github.com/NebulaServices/3kh0/issues" target="_blank">issue tracker.</a></small>
+  </div>
+  <center>
+    <button class="button" onclick="statsForNerds()">Stats for nerds</button>
+  </center>
 
-    <div id="sfn" style="display: none" class="message">
-      Please make a issue about this happening on the
-      <a href="https://github.com/3kh0/3kh0.github.io/issues"
-        >Github issue tracker</a
-      >
-      Requested URL: <span id="full">Fetching...</span><br />
-      Referrer: <span id="ref">Fetching...</span><br />
-      Title: <span id="title">Fetching...</span><br />
-      Screen height: <span id="height">Fetching...</span><br />
-      Screen width: <span id="width">Fetching...</span><br />
-      Window height: <span id="winheight">Fetching...</span><br />
-      Window width: <span id="winwidth">Fetching...</span><br />
-      Cookies: <span id="cookie">Fetching...</span><br />
-      User agent: <span id="ua">Fetching...</span><br />
-      OS platform: <span id="plat">Fetching...</span><br />
-      Online: <span id="online">Fetching...</span><br />
-      Error code: 404<br />
-    </div>
+  <div id="sfn" style="display: none" class="message">
+    <small>
+    <b>Requested URL:</b> <span id="full">Fetching...</span><br/>
+    <b>Referrer:</b> <span id="ref">Fetching...</span><br/>
+    <b>Title:</b> "<span id="title">Fetching...</span>"<br/>
+    <b>Screen height:</b> <span id="height">Fetching...</span><br/>
+    <b>Screen width:</b> <span id="width">Fetching...</span><br/>
+    <b>Window height:</b> <span id="winheight">Fetching...</span><br/>
+    <b>Window width:</b> <span id="winwidth">Fetching...</span><br/>
+    <b>Cookies:</b> <span id="cookie">Fetching...</span><br/>
+    <b>User agent:</b> <span id="ua">Fetching...</span><br >
+    <b>OS platform:</b> <span id="plat">Fetching...</span><br/>
+    <b>Online:</b> <span id="online">Fetching...</span><br/>
+    <b>Error code:</b> 404<br/>
+  </small>
+  </div>
 
-    <script>
-      function statsForNerds() {
-        var x = document.getElementById("sfn");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-          console.log("[ℹ️] Showing the stats for nerds!");
-        } else {
-          x.style.display = "none";
-          console.log("[ℹ️] Hiding the stats for nerds!");
-        }
+  <script>
+    function statsForNerds() {
+      var x = document.getElementById("sfn");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        console.log("[ℹ️] Showing the stats for nerds!");
+      } else {
+        x.style.display = "none";
+        console.log("[ℹ️] Hiding the stats for nerds!");
       }
-      document.getElementById("full").innerText = window.location.href;
-      document.getElementById("ref").innerHTML = document.referrer;
-      document.getElementById("title").innerText = document.title;
-      document.getElementById("height").innerHTML = screen.height + "px";
-      document.getElementById("width").innerHTML = screen.width + "px";
-      document.getElementById("winheight").innerHTML =
-        window.innerHeight + "px";
-      document.getElementById("winwidth").innerHTML = window.innerWidth + "px";
-      document.getElementById("cookie").innerText = navigator.cookieEnabled;
-      document.getElementById("ua").innerHTML = navigator.userAgent;
-      document.getElementById("plat").innerHTML = navigator.platform;
-      document.getElementById("online").innerHTML = navigator.onLine;
-    </script>
-    <footer>© 3kh0 2023</footer>
-    <script src="/js/index.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script src="https://cdn.jsdelivr.net/nwmatcher/1.2.5/nwmatcher.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/json2/0.2/json2.min.js"></script>
-    <script src="https://cdn.rawgit.com/gisu/selectivizr/1.0.3/selectivizr.js"></script>
-    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/es5.shim/4.4.1/es5-shim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/philipwalton/polyfill@master/dist/polyfill.min.js"></script>
-    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.8.0/webcomponents-bundle.js"></script>
-    <script src="http://use.fontawesome.com/526e68a831.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cimaron/cwebgl@master/cWebGL.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/jonathantneal/flexibility@master/flexibility.js"></script>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-          {
-            pageLanguage: "en",
-            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
-          },
-          "google_translate_element"
-        );
-      }
-    </script>
+    }
+    document.getElementById("full").innerText = window.location.href;
+    document.getElementById("ref").innerHTML = document.referrer;
+    document.getElementById("title").innerText = document.title;
+    document.getElementById("height").innerHTML = screen.height + "px";
+    document.getElementById("width").innerHTML = screen.width + "px";
+    document.getElementById("winheight").innerHTML =
+      window.innerHeight + "px";
+    document.getElementById("winwidth").innerHTML = window.innerWidth + "px";
+    document.getElementById("cookie").innerText = navigator.cookieEnabled;
+    document.getElementById("ua").innerHTML = navigator.userAgent;
+    document.getElementById("plat").innerHTML = navigator.platform;
+    document.getElementById("online").innerHTML = navigator.onLine;
+  </script>
+  <footer>© 3kh0 2023 | discord.gg/unblocker</footer>
+  <script src="/js/index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://cdn.jsdelivr.net/nwmatcher/1.2.5/nwmatcher.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/json2/0.2/json2.min.js"></script>
+  <script src="https://cdn.rawgit.com/gisu/selectivizr/1.0.3/selectivizr.js"></script>
+  <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/es5.shim/4.4.1/es5-shim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/philipwalton/polyfill@master/dist/polyfill.min.js"></script>
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.8.0/webcomponents-bundle.js"></script>
+  <script src="http://use.fontawesome.com/526e68a831.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cimaron/cwebgl@master/cWebGL.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/jonathantneal/flexibility@master/flexibility.js"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: "en",
+          layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+        },
+        "google_translate_element"
+      );
+    }
+  </script>
 
-    <script
-      type="text/javascript"
-      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    ></script>
-  </body>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
 </html>
