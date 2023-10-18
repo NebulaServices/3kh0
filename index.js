@@ -23,6 +23,10 @@ routes.forEach((route) => {
 
 app.use(express.static(path.join(__dirname, "public", "src")));
 
+app.use((req, res) => {
+  res.status(404).sendFile(path.join(__dirname, "public", "404.html"));
+});
+
 const server = http.createServer(app);
 server.listen(port, () => {
   console.log(`Server running on port ${port}`);
