@@ -25,7 +25,7 @@
 > If you have any problems please open an issue, so we can fix it ASAP!
 
 ## Deploy (using docker)
-it's very simple to deploy 3kh0 using docker you have to simpely run:
+it's very simple to deploy 3kh0 using docker you have to simply run:
 
 ```docker run -d --restart unless-stopped -p 6003:6003 ghcr.io/NebulaServices/3kh0:main```
 
