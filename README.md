@@ -39,7 +39,7 @@ Due to the amount of games, all of the games have been moved to a [new repo](htt
 ## Contributors
 
 Thank you to all of these amazing people for helping work on this project!
-[![Contrib](https://contrib.rocks/image?repo=3kh0/website-v4#)](https://github.com/3kh0/website-v4/graphs/contributors)
+[![Contrib](https://contrib.rocks/image?repo=NebulaServices/3kh0#)](https://github.com/NebulaServices/3kh0/graphs/contributors)
 
 
 ## Contributing
